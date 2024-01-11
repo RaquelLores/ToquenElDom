@@ -1,1 +1,31 @@
 /* aqui irá el área de estilos de todo el proyecto*/
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+nav ul li a{
+    display: block;
+    padding: 0.5rem 1.2rem;
+    background: #212121;
+    color: white;
+    text-decoration: none;
+    transition: 330ms all ease-out;
+}
+nav ul li a:hover{
+    background: #d1d1d1;
+    color: #212121;
+}
+nav ul li ul{
+    display: block;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 330ms all ease-out;
+}
