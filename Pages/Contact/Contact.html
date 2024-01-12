@@ -23,12 +23,40 @@
     </header>
     <!-- CUERPO PRINCIPAL LA SECCIÓN CONTACTO -->
     <!--FORMULARIO-->
+    <form>
+        <div>
+          <label for="name">Tu nombre</label>
+          <input type="name" id="name" name="name">
+        </div>
+        <br>
+        <div>
+          <label for="email">Tu correo electrónico</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <br>
+        <div>
+            <label for="text">Tu mensaje</label>
+            <input type="text" id="text" name="text">
+          </div>
+        
+        <div>
+            <button type="button" class="btn btn-warning">Enviar</button>
+
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+        Acepto la <a href="/Pages/PrivacyPolicy.html" target="_blank">política de privacidad</a>
+            </label>
+        </div>
+      </form>
+    
 
         <!-- FOOTER -->
         <footer id="footer">
             <p>Contacto: info@tuescuela.com</p>
         </footer>
         <!--ENLACE A JAVA SCRIPT // PUEDE ENLAZARSE EN EL HEAD, SIN EMBARGO SE RECOMIENDA ENLAZARLO AL FINAL DEL BODY, PARA QUE ASÍ LA CARGA DE LA PÁGINA SEA MÁS RÁPIDA-->
-        <script src="./src/index.js"></script>
+        <script src=".index.js"></script>
     </body>
     </html>
