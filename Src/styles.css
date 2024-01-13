@@ -77,6 +77,7 @@
 /* Estilo para el encabezado */
 
 header {
+    margin:  0%;
     background-color: #F5F5F5; /* Color de fondo de la barra de navegación */
     padding: 5vh; /* Espaciado interno en el encabezado */
     display: flex; /* Utiliza el modelo de caja flexible para alinear elementos hijos */
@@ -115,6 +116,7 @@ nav ul li a {
 /*Estilo especifico para el cuerpo de page_uner_constrution*/
 
 .PageUnderConstruction {
+    margin: 0%;
     background-color: #F5F5F5;
     margin: 0;
 }
@@ -138,3 +140,13 @@ nav ul li a {
     height: 30vh;
 }
 
+footer {
+    margin: 0%;
+    background: linear-gradient(to top, #3333CB, #F5F5F5);
+    /* La propiedad 'to bottom' indica que el degradado va de arriba hacia abajo */
+    /* Puedes ajustar los colores (#3498db y #2c3e50) según tus preferencias */
+    /* También puedes cambiar 'to bottom' a 'to top' si deseas que el degradado vaya de abajo hacia arriba */
+    /* Otra opción es usar 'to right', 'to left', 'to bottom right', etc., según la dirección deseada */
+    height: 30vh; /* Ajusta la altura según tus necesidades */
+    width: 100%; /* O ajusta el ancho según tus necesidades */
+}
