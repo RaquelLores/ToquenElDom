@@ -92,7 +92,7 @@ nav ul {
 /* Estilo para los elementos de la lista de navegación */
 nav ul li {
     display: inline; /* Muestra los elementos de la lista en línea */
-    margin-right: 8vw ; /* Espaciado entre elementos de la lista */
+    margin-right: 5vw ; /* Espaciado entre elementos de la lista */
 }
 
 /* Estilo para los enlaces de navegación */
