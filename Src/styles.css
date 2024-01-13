@@ -69,34 +69,40 @@
     order: 1; /* Cambia el orden para colocar el logo primero */
     margin-right: 20px; /* Espacio entre el logo y el resto de los elementos, ajusta según sea necesario */
 }
-/*aquí terminan los estilos del index*/
-nav ul{
-    list-style: none;
+
+
+/*aquí terminan los estilos del navbar index*/
+/* Estilo para la barra de navegación */
+header {
+    display: flex;
+    background-color: #F5F5F5; /* Color de fondo de la barra de navegación */
+    padding: 2vh; /* Espaciado interno en el encabezado */
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Estilo para la lista de navegación */
+nav ul {
+    list-style-type: none; /* Quita los puntos de la lista */
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    overflow: hidden;
 }
-nav ul li:hover ul{
-    opacity: 1;
-    visibility: visible;
+
+/* Estilo para los elementos de la lista de navegación */
+nav ul li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin-right: 8vw ; /* Espaciado entre elementos de la lista */
 }
-nav ul li a{
-    display: block;
-    padding: 0.5rem 1.2rem;
-    background: #212121;
-    color: white;
-    text-decoration: none;
-    transition: 330ms all ease-out;
+
+/* Estilo para los enlaces de navegación */
+nav ul li a {
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color:#3333CB; /* Color del texto del enlace */
 }
-nav ul li a:hover{
-    background: #d1d1d1;
-    color: #212121;
-}
-nav ul li ul{
-    display: block;
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-    transition: 330ms all ease-out;
+
+/* Estilo específico para el logo en la barra de navegación */
+.logo_navar img {
+    width: 10vw;
+    height: 17vh;
 }
