@@ -73,12 +73,15 @@
 
 /*aquí terminan los estilos del navbar index*/
 /* Estilo para la barra de navegación */
+/* Estilo para el encabezado */
 header {
-    display: flex;
     background-color: #F5F5F5; /* Color de fondo de la barra de navegación */
-    padding: 2vh; /* Espaciado interno en el encabezado */
-    align-items: center;
-    justify-content: space-evenly;
+    padding: 5vh; /* Espaciado interno en el encabezado */
+    display: flex; /* Utiliza el modelo de caja flexible para alinear elementos hijos */
+    justify-content: space-between; /* Espacio uniformemente distribuido entre elementos hijos */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 15vh; /* Altura fija para todos los elementos del encabezado */
+    position: relative; /* Establece la posición relativa para poder posicionar las líneas */
 }
 
 /* Estilo para la lista de navegación */
