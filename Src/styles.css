@@ -73,20 +73,24 @@
 
 /*aquí terminan los estilos del navbar index*/
 
+
 /* Estilo para la barra de navegación */
 /* Estilo para el encabezado */
 
 header {
-    margin:  0%;
+    margin:  0;
     background-color: #F5F5F5; /* Color de fondo de la barra de navegación */
     padding: 5vh; /* Espaciado interno en el encabezado */
     display: flex; /* Utiliza el modelo de caja flexible para alinear elementos hijos */
     justify-content: space-between; /* Espacio uniformemente distribuido entre elementos hijos */
     align-items: center; /* Centra los elementos verticalmente */
-    height: 9vh; /* Altura fija para todos los elementos del encabezado */
-    position: relative; /* Establece la posición relativa para poder posicionar las líneas */
+    height: 9vh;
+    position: relative; 
 }
 
+#header hr {
+    border-color: #3333CB;
+}
 /* Estilo para la lista de navegación */
 nav ul {
     list-style-type: none; /* Quita los puntos de la lista */
@@ -97,7 +101,7 @@ nav ul {
 
 /* Estilo para los elementos de la lista de navegación */
 nav ul li {
-    display: inline; /* Muestra los elementos de la lista en línea */
+    display: inline; /* alinea los elementos de la lista en línea */
     margin-right: 5vw ; /* Espaciado entre elementos de la lista */
 }
 
@@ -107,18 +111,19 @@ nav ul li a {
     color:#3333CB; /* Color del texto del enlace */
 }
 
+/* Estilo específico para el logo en la barra de navegación */
+
 .logo_navar {
     width: 10vw;
     height: 17vh;
 }
-/* Estilo específico para el logo en la barra de navegación */
+
 
 /*Estilo especifico para el cuerpo de page_uner_constrution*/
 
 .PageUnderConstruction {
-    margin: 0%;
-    background-color: #F5F5F5;
     margin: 0;
+    background-color: #F5F5F5;
 }
 
 .page_under_construction {
@@ -140,13 +145,47 @@ nav ul li a {
     height: 30vh;
 }
 
+/*Estilo especifico para el footer*/
+
 footer {
     margin: 0%;
+    margin-top: 5vw;
     background: linear-gradient(to top, #3333CB, #F5F5F5);
     /* La propiedad 'to bottom' indica que el degradado va de arriba hacia abajo */
-    /* Puedes ajustar los colores (#3498db y #2c3e50) según tus preferencias */
     /* También puedes cambiar 'to bottom' a 'to top' si deseas que el degradado vaya de abajo hacia arriba */
-    /* Otra opción es usar 'to right', 'to left', 'to bottom right', etc., según la dirección deseada */
-    height: 30vh; /* Ajusta la altura según tus necesidades */
-    width: 100%; /* O ajusta el ancho según tus necesidades */
+    width: 100%;
+    height: 100%;
+}
+
+.footer_contactpart {
+    padding: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_logo {
+    width: 10vw;
+    height: 10vh;
+    margin: 0 10px; /* Ajusta el margen entre las imágenes según sea necesario */
+}
+
+.footer_socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+
+footer img {
+    width: 10vw;
+    height: 10vh;
+}
+
+#footer hr {
+    border-color: white; /* Color blanco para los hr en el footer */
+}
+
+.footer_copyright {
+    text-align: center;
+    color: #F5F5F5;
 }
