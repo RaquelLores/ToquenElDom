@@ -73,7 +73,6 @@
 
 /*aquí terminan los estilos del navbar index*/
 
-
 /* Estilo para la barra de navegación */
 /* Estilo para el encabezado */
 
@@ -84,8 +83,8 @@ header {
     display: flex; /* Utiliza el modelo de caja flexible para alinear elementos hijos */
     justify-content: space-between; /* Espacio uniformemente distribuido entre elementos hijos */
     align-items: center; /* Centra los elementos verticalmente */
-    height: 9vh;
-    position: relative; 
+    height: 9vh; /* Altura fija para todos los elementos del encabezado */
+    position: relative; /* Establece la posición relativa para poder posicionar las líneas */
 }
 
 /* Estilo para la lista de navegación */
@@ -98,7 +97,7 @@ nav ul {
 
 /* Estilo para los elementos de la lista de navegación */
 nav ul li {
-    display: inline; /* alinea los elementos de la lista en línea */
+    display: inline; /* Muestra los elementos de la lista en línea */
     margin-right: 5vw ; /* Espaciado entre elementos de la lista */
 }
 
@@ -108,13 +107,11 @@ nav ul li a {
     color:#3333CB; /* Color del texto del enlace */
 }
 
-/* Estilo específico para el logo en la barra de navegación */
-
 .logo_navar {
     width: 10vw;
     height: 17vh;
 }
-
+/* Estilo específico para el logo en la barra de navegación */
 
 /*Estilo especifico para el cuerpo de page_uner_constrution*/
 
@@ -147,7 +144,9 @@ footer {
     margin: 0%;
     background: linear-gradient(to top, #3333CB, #F5F5F5);
     /* La propiedad 'to bottom' indica que el degradado va de arriba hacia abajo */
+    /* Puedes ajustar los colores (#3498db y #2c3e50) según tus preferencias */
     /* También puedes cambiar 'to bottom' a 'to top' si deseas que el degradado vaya de abajo hacia arriba */
-    height: 30vh; 
-    width: 100%;
+    /* Otra opción es usar 'to right', 'to left', 'to bottom right', etc., según la dirección deseada */
+    height: 30vh; /* Ajusta la altura según tus necesidades */
+    width: 100%; /* O ajusta el ancho según tus necesidades */
 }
