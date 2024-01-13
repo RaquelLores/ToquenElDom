@@ -72,15 +72,17 @@
 
 
 /*aquí terminan los estilos del navbar index*/
+
 /* Estilo para la barra de navegación */
 /* Estilo para el encabezado */
+
 header {
     background-color: #F5F5F5; /* Color de fondo de la barra de navegación */
     padding: 5vh; /* Espaciado interno en el encabezado */
     display: flex; /* Utiliza el modelo de caja flexible para alinear elementos hijos */
     justify-content: space-between; /* Espacio uniformemente distribuido entre elementos hijos */
     align-items: center; /* Centra los elementos verticalmente */
-    height: 15vh; /* Altura fija para todos los elementos del encabezado */
+    height: 9vh; /* Altura fija para todos los elementos del encabezado */
     position: relative; /* Establece la posición relativa para poder posicionar las líneas */
 }
 
@@ -104,8 +106,35 @@ nav ul li a {
     color:#3333CB; /* Color del texto del enlace */
 }
 
-/* Estilo específico para el logo en la barra de navegación */
-.logo_navar img {
+.logo_navar {
     width: 10vw;
     height: 17vh;
 }
+/* Estilo específico para el logo en la barra de navegación */
+
+/*Estilo especifico para el cuerpo de page_uner_constrution*/
+
+.PageUnderConstruction {
+    background-color: #F5F5F5;
+    margin: 0;
+}
+
+.page_under_construction {
+    text-align: center;
+    color: #3333CB;
+}
+
+.title_page_under_construction {
+    font-size: 3vw;
+    margin: 0%;
+}
+
+.h2_page_under_construction {
+    font-size: 1vw;
+}
+
+.page_under_construction img {
+    width: 60vw;
+    height: 30vh;
+}
+
