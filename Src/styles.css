@@ -164,6 +164,7 @@ footer {
     height: 100%;
     font-family: open sans-serif;
     color: white;
+    text-decoration: none; /* Quita el subrayado del enlace */
 }
 
 .footer_contactpart {
@@ -184,7 +185,16 @@ footer {
     justify-content: center;
     align-items: center;
 }
-  
+
+.correo_de_contacto_page_under_construction {
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: white; /* Color del texto del enlace */
+}
+
+.telefono_footer {
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: white; /* Color del texto del enlace */
+}
 
 footer img {
     margin: 3vw;

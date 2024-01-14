@@ -1,3 +1,5 @@
+/* aqui comienzan los script de page_under_construction*/
+
 document.addEventListener('DOMContentLoaded', function() {
     // Seleccionar todas las etiquetas <li>
     let todasLasEtiquetasLi = document.querySelectorAll('li');
@@ -29,3 +31,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+/*aqui trminan los script de page_under_construction*/
