@@ -82,15 +82,21 @@ header {
     background-color: #F5F5F5; /* Color de fondo de la barra de navegación */
     padding: 5vh; /* Espaciado interno en el encabezado */
     display: flex; /* Utiliza el modelo de caja flexible para alinear elementos hijos */
-    justify-content: space-between; /* Espacio uniformemente distribuido entre elementos hijos */
+    justify-content: space-around;
     align-items: center; /* Centra los elementos verticalmente */
     height: 9vh;
     position: relative; 
     font-family: abril fantasy;
+    justify-content: space-between;
 }
 
-#header hr {
-    border-color: #3333CB;
+header p {
+    color: #3333CB;
+}
+
+.logo_page_under_construction {
+    display: flex;
+    align-items: center;
 }
 /* Estilo para la lista de navegación */
 nav ul {
