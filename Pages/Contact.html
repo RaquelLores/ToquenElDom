@@ -28,36 +28,32 @@
   </header>
 
   <!-- CUERPO PRINCIPAL LA SECCIÓN CONTACTO -->
-      <div class="grid-container">
-        <div class="form-title">Envíanos tu mensaje</div>
+ <section class="contact"></section>
+  <div class="container">
+    <form id="contactForm">
 
-        <div class="name-field">
-          <label for="name">Tu nombre</label>
-          <input type="name" id="name" name="name">
-        </div>
+        <div class="message">Envíanos tu mensaje</div>
 
-        <div class="email-field">
-          <label for="email">Tu correo electrónico</label>
-          <input type="email" id="email" name="email">
-        </div>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
 
-        <div class="text-field">
-          <label for="text">Tu mensaje</label>
-          <textarea id="text" name="text"></textarea>
-        </div>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
 
         <div class="checkbox-field">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            Acepto la <a href="/Pages/PrivacyPolicy.html" target="_blank">política de privacidad</a>
-          </label>
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Acepto la <a href="/Pages/PrivacyPolicy.html" target="_blank">política de privacidad</a>
+            </label>
         </div>
 
-        <div class="button-form">
-          <button type="button" class="btn btn-warning">Enviar</button>
-        </div>
-      </div>
-    </div>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+</section>
 
 
 
