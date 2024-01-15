@@ -39,6 +39,3 @@ document.addEventListener('DOMContentLoaded', function() {
 /* Aquí empiezan los estilos JS del teclado */
 
 
-
-
-
