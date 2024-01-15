@@ -288,41 +288,30 @@ textarea {
 }
 
 /* empiezan los estilos del piano*/
-.teclas{
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.teclas {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-.teclas_blancas {
   position: relative;
-  z-index: 1; /* Asignamos un índice menor para el div de teclas blancas */
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  gap: 10px; /* Ajusta el espacio entre las teclas según sea necesario */
 }
-
 .teclas_negras {
   position: absolute;
-  z-index: 2; /* Asignamos un índice mayor para el div de teclas azules */
-  /* Puedes ajustar las propiedades top, left, right, bottom según tu diseño */
-  top: 0;
-  left: 0;
-  /* Agrega cualquier otro estilo necesario para las teclas azules */
   display: flex;
-  justify-content: center;
-  gap: 10px; /* Ajusta el espacio entre las teclas según sea necesario */
+  align-items: center;
+  gap: 147px; /* Ajusta el espacio entre las teclas negras según sea necesario */
 }
-.teclas_negras_primeras {
-  margin-right: 47px;
-  margin-left: 47px;
+.teclas_blancas {
   display: flex;
-  gap: 10px; /* Ajusta el espacio entre las teclas negras según sea necesario */
-  justify-content: center;
+  gap: 0px; /* Ajusta el espacio entre las teclas blancas según sea necesario */
 }
-.teclas_negras_segundas {
-  display: flex;
-  gap: 10px; /* Ajusta el espacio entre las teclas negras según sea necesario */
-  justify-content: center;
-}
+
+
+
