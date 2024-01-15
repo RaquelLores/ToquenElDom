@@ -49,4 +49,4 @@ document.getElementById("one").addEventListener('click',
 function (){
 keyOne.style.color = "blue";
   
-})
+}) 
