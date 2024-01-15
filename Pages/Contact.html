@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toquen el dom</title>
+  <link rel="stylesheet" href="/Src/styles.css">
+
+</head>
+
+<body>
+  <!-- MENÚ DE NAVEGACIÓN -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="./virtual_instruments/virtual_instruments.html">Instrumentos virtuales</a></li>
+        <!--mediante el uso de <a hrref="/index.html#about"> al añadir #about inmediatamente detrás de /index.html nos redirige a una parte especifica  de una página externa-->
+        <li><a href="/index.html#about">About Us</a></li>
+        <!-- Opcional -->
+        <li><a href="#services">Services</a></li>
+        <li><a href="./Pages/Contact/Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CUERPO PRINCIPAL LA SECCIÓN CONTACTO CON GRID -->
+  <div class="parent">
+  <!-- Contenido de la columna izquierda -->
+
+    <div class="first-child">
+      <ul class="tel-address-email">
+        <li class="contacto">Contacto</li>
+        <li class="tel">685452985 - 902768823</li>
+        <li class="address">C/ Amaniel, 2 28015 Madrid</li>
+        <li class="email">contacto@toqueneldom.com<a href="mailto:contacto@toqueneldom.com"></a></li>
+      </ul>
+    </div>
+
+    <div class="second-child">
+      <map><a><iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.2645607851273!2d-3.711678325487745!3d40.42514035512978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228648c8e3beb%3A0xb3719411609df21c!2sC.%20de%20Amaniel%2C%202%2C%20Centro%2C%2028015%20Madrid!5e0!3m2!1ses!2ses!4v1705154079684!5m2!1ses!2ses"
+            width="300" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe></a></map>
+    </div>
+
+    <div class="grid-container">
+      <!-- Contenido de la columna derecha -->
+    <div class="grid-container"> 
+      <div class="column-derecha">
+        <div class="third-child-form-title">Envíanos tu mensaje</div>
+
+        <div class="name-field">
+          <label for="name">Tu nombre</label>
+          <input type="name" id="name" name="name">
+        </div>
+
+        <div class="email-field">
+          <label for="email">Tu correo electrónico</label>
+          <input type="email" id="email" name="email">
+        </div>
+
+        <div class="text-field">
+          <label for="text">Tu mensaje</label>
+          <textarea id="text" name="text"></textarea>
+        </div>
+
+        <div class="checkbox-field">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Acepto la <a href="/Pages/PrivacyPolicy.html" target="_blank">política de privacidad</a>
+          </label>
+        </div>
+
+        <div class="button-form">
+          <button type="button" class="btn btn-warning">Enviar</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <p>Contacto: info@tuescuela.com</p>
+    </footer>
+    <!--ENLACE A JAVA SCRIPT // PUEDE ENLAZARSE EN EL HEAD, SIN EMBARGO SE RECOMIENDA ENLAZARLO AL FINAL DEL BODY, PARA QUE ASÍ LA CARGA DE LA PÁGINA SEA MÁS RÁPIDA-->
+    <script src=".index.js"></script>
+</body>
+
+</html>
