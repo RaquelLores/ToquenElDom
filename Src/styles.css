@@ -1,73 +1,92 @@
 /* aqui irá el área de estilos de todo el proyecto*/
 /*empiezan los estilos del index*/
 .body {
-    background-color: #F5F5F5;
+  background-color: #F5F5F5;
 }
+
 .logo_principal {
-    width: 625px;
-    height: 625px;
-    flex-shrink: 0;
-    flex: 1; /* Toma el espacio restante en el contenedor */
+  width: 625px;
+  height: 625px;
+  flex-shrink: 0;
+  flex: 1;
+  /* Toma el espacio restante en el contenedor */
 }
+
 .fondo_amarillo_index {
-    width: 308px;
-    height: 216px;
-    flex-shrink: 0;
-    border-radius: 50px;
-    background: linear-gradient(108deg, rgba(254, 196, 29, 0.00) -29.08%, #FEC41D 41.26%, rgba(254, 196, 29, 0.00) 106.83%);
-    color: #3333CB;
-    font-family: Open Sans;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    position: relative;
-    padding: 20px; /* Ajusta el relleno según sea necesario */
-    order: 1; /* Coloca fondo_amarillo_index en la primera posición */
+  width: 308px;
+  height: 216px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: linear-gradient(108deg, rgba(254, 196, 29, 0.00) -29.08%, #FEC41D 41.26%, rgba(254, 196, 29, 0.00) 106.83%);
+  color: #3333CB;
+  font-family: Open Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  padding: 20px;
+  /* Ajusta el relleno según sea necesario */
+  order: 1;
+  /* Coloca fondo_amarillo_index en la primera posición */
 }
+
 .texto_primero_index {
-    width: 206px;
-    position: absolute;
-    top: 10%;
-    left: 10%;
+  width: 206px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
 }
+
 .texto_segundo_index {
-    width: 172px;
-    height: 42px;
-    flex-shrink: 0;
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
+  width: 172px;
+  height: 42px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
 }
+
 .agua {
-    width: 308px;
-    height: 373px;
-    flex-shrink: 0;
-    border-radius: 200px 200px 0px 0px;
-    order: 2; /* Coloca agua en la segunda posición */
+  width: 308px;
+  height: 373px;
+  flex-shrink: 0;
+  border-radius: 200px 200px 0px 0px;
+  order: 2;
+  /* Coloca agua en la segunda posición */
 }
+
 .guitarristas {
-    width: 308px;
-    height: 401px;
-    flex-shrink: 0;
-    border-radius: 200px 0px 0px 0px;
-    order: 3; /* Coloca guitarristas en la tercera posición */
+  width: 308px;
+  height: 401px;
+  flex-shrink: 0;
+  border-radius: 200px 0px 0px 0px;
+  order: 3;
+  /* Coloca guitarristas en la tercera posición */
 }
+
 .piano-foto {
-    width: 308px;
-    height: 193px;
-    flex-shrink: 0;
-    border-radius: 200px 0px 0px 200px;
-    order: 4; /* Coloca piano-foto en la cuarta posición */
+  width: 308px;
+  height: 193px;
+  flex-shrink: 0;
+  border-radius: 200px 0px 0px 200px;
+  order: 4;
+  /* Coloca piano-foto en la cuarta posición */
 }
+
 .primer_body_index {
-    display: flex;
-  flex-direction: row; /* Alinea los elementos en fila (horizontalmente) */
-  align-items: center; /* Centra verticalmente los elementos */
+  display: flex;
+  flex-direction: row;
+  /* Alinea los elementos en fila (horizontalmente) */
+  align-items: center;
+  /* Centra verticalmente los elementos */
 }
+
 .imagenes_body_index {
-    order: 1; /* Cambia el orden para colocar el logo primero */
-    margin-right: 20px; /* Espacio entre el logo y el resto de los elementos, ajusta según sea necesario */
+  order: 1;
+  /* Cambia el orden para colocar el logo primero */
+  margin-right: 20px;
+  /* Espacio entre el logo y el resto de los elementos, ajusta según sea necesario */
 }
 .segunda_intro_index {
     display: flex;
@@ -114,31 +133,201 @@ line-height: normal;
 /*aquí terminan los estilos del index*/
 nav ul{
     list-style: none;
+
+/*aquí terminan los estilos del navbar index*/
+
+
+/* Estilo para la barra de navegación */
+/* Estilo para el encabezado */
+
+header {
+    margin:  0;
+    background-color: #F5F5F5; /* Color de fondo de la barra de navegación */
+    padding: 5vh; /* Espaciado interno en el encabezado */
+    display: flex; /* Utiliza el modelo de caja flexible para alinear elementos hijos */
+    justify-content: space-around;
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 9vh;
+    position: relative; 
+    font-family: abril fantasy;
+    justify-content: space-between;
+}
+
+header p {
+    color: #3333CB;
+}
+
+.logo_page_under_construction {
+    display: flex;
+    align-items: center;
+}
+/* Estilo para la lista de navegación */
+nav ul {
+    list-style-type: none; /* Quita los puntos de la lista */
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    overflow: hidden;
 }
-nav ul li:hover ul{
-    opacity: 1;
-    visibility: visible;
+
+/* Estilo para los elementos de la lista de navegación */
+nav ul li {
+    display: inline; /* alinea los elementos de la lista en línea */
+    margin-right: 5vw ; /* Espaciado entre elementos de la lista */
 }
-nav ul li a{
-    display: block;
-    padding: 0.5rem 1.2rem;
-    background: #212121;
+
+/* Estilo para los enlaces de navegación */
+nav ul li a {
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color:#3333CB; /* Color del texto del enlace */
+}
+
+/* Estilo específico para el logo en la barra de navegación */
+
+.logo_navar {
+    width: 10vw;
+    height: 17vh;
+}
+
+
+/*Estilo especifico para el cuerpo de page_uner_constrution*/
+
+.PageUnderConstruction {
+    margin: 0;
+    background-color: #F5F5F5;
+}
+
+.page_under_construction {
+    text-align: center;
+    color: #3333CB;
+}
+
+.title_page_under_construction {
+    font-size: 3vw;
+    margin: 0%;
+}
+
+.h2_page_under_construction {
+    font-size: 1vw;
+}
+
+.page_under_construction img {
+    width: 60vw;
+    height: 30vh;
+}
+
+/*Estilo especifico para el footer*/
+
+footer {
+    margin: 0%;
+    margin-top: 5vw;
+    background: linear-gradient(to top, #3333CB, #F5F5F5);
+    /* La propiedad 'to bottom' indica que el degradado va de arriba hacia abajo */
+    /* También puedes cambiar 'to bottom' a 'to top' si deseas que el degradado vaya de abajo hacia arriba */
+    width: 100%;
+    height: 100%;
+    font-family: open sans-serif;
     color: white;
-    text-decoration: none;
-    transition: 330ms all ease-out;
+    text-decoration: none; /* Quita el subrayado del enlace */
 }
-nav ul li a:hover{
-    background: #d1d1d1;
-    color: #212121;
+
+.footer_contactpart {
+    padding: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-nav ul li ul{
-    display: block;
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-    transition: 330ms all ease-out;
+
+.footer_logo {
+    width: 10vw;
+    height: 10vh;
+    margin: 0 10px; /* Ajusta el margen entre las imágenes según sea necesario */
+}
+
+.footer_socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.correo_de_contacto_page_under_construction {
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: white; /* Color del texto del enlace */
+}
+
+.telefono_footer {
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: white; /* Color del texto del enlace */
+}
+
+footer img {
+    margin: 3vw;
+    width: 10vw;
+    height: 10vh;
+}
+
+#footer hr {
+    border-color: white; /* Color blanco para los hr en el footer */
+}
+
+.footer_copyright {
+    font-size: small;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+/*AQUI EMPIEZAN LOS ESTILOS DE LA PAGINA DE CONTACTO*/
+.parent {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* dos columnas, una ocupa un 1/3 y otra 2/3 */
+  grid-template-rows: 1fr, 1fr;
+  row-gap: 3px;
+  padding: 3%;
+}
+
+/* Estilos para la columna izquierda */
+.first-child {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  padding: 10px;
+  background-color: #F5F5F5;
+  list-style: none;
+  font-family: 'Open Sans';
+}
+
+.second-child {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 10px;
+  background-color: #F5F5F5;
+}
+
+/* Estilos para la columna derecha*/
+.column-derecha {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end:3;
+  padding: 10px;
+}
+
+/* Estilos para el formulario */
+.third-child-form-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.name-field,
+.email-field,
+.text-field,
+.checkbox-field,
+.button-form {
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
 }
