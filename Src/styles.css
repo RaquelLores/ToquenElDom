@@ -288,7 +288,7 @@ textarea {
 }
 
 /* empiezan los estilos del piano*/
-body {
+.conjunto_teclas{
   margin: 0;
   display: flex;
   align-items: center;
