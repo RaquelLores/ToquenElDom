@@ -18,10 +18,12 @@ document.addEventListener('DOMContentLoaded', function() {
         etiqueta.addEventListener('mouseover', function() {
             etiqueta.style.backgroundColor = 'rgba(51, 51, 203, 0.8)';
             etiqueta.style.color = '#fff';
-            etiqueta.style.borderRadius = "60%";
-            etiqueta.style.opacity = "1";
+            etiqueta.style.borderRadius = "40%";
+            etiqueta.style.opacity = "10%";
         });
 
+        //eliminar evento hover cuando el mouse sale del area a modificar 
+        
         etiqueta.addEventListener('mouseout', function() {
             // Restablecer los estilos originales
             etiqueta.style.backgroundColor = estiloOriginal.backgroundColor;
