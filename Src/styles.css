@@ -287,3 +287,32 @@ textarea {
   height: 100px;
   box-sizing: border-box;
 }
+
+/* empiezan los estilos del piano*/
+.conjunto_teclas{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.teclas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.teclas_negras {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 147px; /* Ajusta el espacio entre las teclas negras según sea necesario */
+}
+.teclas_blancas {
+  display: flex;
+  gap: 0px; /* Ajusta el espacio entre las teclas blancas según sea necesario */
+}
+
+
+
