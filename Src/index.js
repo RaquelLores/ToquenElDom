@@ -33,4 +33,58 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
 /*aqui trminan los script de page_under_construction*/
+/* Aquí empiezan los estilos JS del teclado */
+
+//aquí empiezan los estilos de js del piano
+
+document.addEventListener('DOMContentLoaded', function () {
+    let teclasBlancas = document.querySelectorAll('.tecla_blanca');
+ 
+     teclasBlancas.forEach(function (tecla) {
+         tecla.addEventListener('click', function () {
+             // Cambia la imagen al hacer clic
+             tecla.src = "/Public/teclas/tecla_blanca_pulsada.svg";
+         });
+     });
+ });
+ 
+ 
+ document.addEventListener('DOMContentLoaded', function () {
+     let teclasBlancas = document.querySelectorAll('.tecla_blanca');
+  
+      teclasBlancas.forEach(function (tecla) {
+          tecla.addEventListener('mouseout', function () {
+              // Cambia la imagen al hacer clic
+              tecla.src = "/Public/teclas/tecla_blanca.svg";
+          });
+      });
+  });
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    let teclasNegras = document.querySelectorAll('.tecla_negra');
+ 
+     teclasNegras.forEach(function (tecla) {
+         tecla.addEventListener('click', function () {
+             // Cambia la imagen al hacer clic
+             tecla.src = "/Public/teclas/tecla_negra_pulsada.svg";
+         });
+     });
+ });
+ 
+ 
+ document.addEventListener('DOMContentLoaded', function () {
+     let teclasNegras = document.querySelectorAll('.tecla_negra');
+  
+      teclasNegras.forEach(function (tecla) {
+          tecla.addEventListener('mouseout', function () {
+              // Cambia la imagen al hacer clic
+              tecla.src = "/Public/teclas/tecla_negra.svg";
+          });
+      });
+  });
+
+
+
