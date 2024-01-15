@@ -34,21 +34,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 /*aqui trminan los script de page_under_construction*/
+/* Aquí empiezan los estilos JS del teclado */
 
-/* aqui empizan los estilos js de el teclado*/
+// Selecciona todos los elementos con la clase "teclas_blancas"
+//let teclasBlancas = document.querySelectorAll('.teclas_blancas');
 
-// Llama a todas las teclas blancas por su clase
-let todasLasTeclasBlancas = document.querySelectorAll('.teclas_blancas .tecla');
+// Realiza alguna acción con cada elemento seleccionado
+//teclasBlancas.forEach(teclaBlanca => {  teclaBlanca.style.backgroundColor = 'yellow';});
 
-// Añade un evento de clic a cada tecla blanca
-todasLasTeclasBlancas.forEach((teclaBlanca) => {
-    teclaBlanca.addEventListener('click', function() {
-// Aquí puedes realizar acciones específicas al hacer clic en una tecla blanca
-    cambiarColor(this);
-    });
-});
+const keyOne = document.getElementsByClassName("teclas_blancas");
 
-// Función para cambiar el color de fondo de la tecla
-function cambiarColor(elemento) {
-    elemento.style.backgroundColor = "#black"; // Puedes ajustar el color según tu preferencia
-}
+
+document.getElementById("one").addEventListener('click',
+function (){
+keyOne.style.color = "blue";
+  
+})
