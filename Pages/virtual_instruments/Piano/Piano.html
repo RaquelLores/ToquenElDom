@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" href="/Public/img_index/logo.png" type="tipo_de_imagen">
     <link rel="stylesheet" href="/Src/styles.css">
 </head>
 <body>
@@ -30,5 +31,17 @@
     </div>
     <script src="/Src/index.js"></script>
     </article>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var teclasBlancas = document.querySelectorAll('.tecla_blanca');
+
+            teclasBlancas.forEach(function (tecla) {
+                tecla.addEventListener('click', function () {
+                    // Cambia la imagen al hacer clic
+                    tecla.src = '/Public/teclas/tecla_blanca_pulsada.svg';
+                });
+            });
+        });
+    </script>
 </body>
 </html>
