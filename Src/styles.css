@@ -69,6 +69,48 @@
     order: 1; /* Cambia el orden para colocar el logo primero */
     margin-right: 20px; /* Espacio entre el logo y el resto de los elementos, ajusta según sea necesario */
 }
+.segunda_intro_index {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Coloca los elementos en los extremos */
+  }
+.profesora-y-niño {
+    width: 578px;
+height: 453px;
+flex-shrink: 0;
+border-radius: 100px;
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+max-width: 50%; /* Ajusta el ancho de la imagen según sea necesario */
+margin-left: 5%;
+}
+.texto_bienvenida {
+    width: 642px;
+    color: #3333CB;
+text-align: justify;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+max-width: 45%; /* Ajusta el ancho del texto según sea necesario */
+margin-right: 5%;
+}
+.instrumentos_virtuales {
+    width: 1440px;
+height: 554px;
+flex-shrink: 0;
+background: linear-gradient(0deg, #FEC41D 3.88%, rgba(254, 196, 29, 0.00) 99.66%);
+}
+.texto_instrumentos_virtuales {
+    width: 774px;
+    color: #3333CB;
+text-align: justify;
+font-family: Abril Fatface;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
 /*aquí terminan los estilos del index*/
 nav ul{
     list-style: none;
