@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     // Seleccionar todas las etiquetas <li>
     let todasLasEtiquetasLi = document.querySelectorAll('li');
@@ -31,3 +32,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+    // Agregar evento al botón de menú para mostrar/ocultar el menú en pantallas pequeñas
+    let menuToggle = document.querySelector('.menu-toggle');
+    let navList = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', function() {
+        navList.classList.toggle('show-menu');
+    });
