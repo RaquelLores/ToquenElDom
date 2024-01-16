@@ -1,6 +1,6 @@
 /* aqui irá el área de estilos de todo el proyecto*/
 /*empiezan los estilos del index*/
-.body {
+.body_index {
   background-color: #F5F5F5;
 }
 
@@ -19,7 +19,7 @@
   border-radius: 50px;
   background: linear-gradient(108deg, rgba(254, 196, 29, 0.00) -29.08%, #FEC41D 41.26%, rgba(254, 196, 29, 0.00) 106.83%);
   color: #3333CB;
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -43,7 +43,7 @@
   height: 42px;
   flex-shrink: 0;
   position: absolute;
-  bottom: 10%;
+  bottom: 25%;
   right: 10%;
 }
 
@@ -106,7 +106,7 @@ margin-left: 5%;
     width: 642px;
     color: #3333CB;
 text-align: justify;
-font-family: Open Sans;
+font-family: 'Open Sans', sans-serif;
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
@@ -124,11 +124,22 @@ background: linear-gradient(0deg, #FEC41D 3.88%, rgba(254, 196, 29, 0.00) 99.66%
     width: 774px;
     color: #3333CB;
 text-align: justify;
-font-family: Abril Fatface;
+font-family: 'Abril Fatface', serif;
 font-size: 40px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+}
+.logos_instrumentos {
+  display: flex; /* Utiliza el modelo flexbox para alinear elementos en línea */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+}
+
+.logos_instrumentos img {
+  margin: 0 2%; /* Añade un pequeño espacio entre las imágenes */
+  max-width: 100%; /* Asegura que las imágenes no se extiendan más allá de su tamaño original */
+  height: auto; /* Mantiene la proporción de la imagen al cambiar su ancho */
 }
 /*aquí terminan los estilos del index*/
 nav ul{
