@@ -120,7 +120,7 @@ const validaFalla = (input, msje) => {
     aviso.innerText = msje
     // Hacer que salga un mensaje al equivocarse con el apartado nombre de usuario
     formControl.className = 'contactForm falla'
-    // Que salga de color rojo al equivocarse
+    
 }
 const validaOk = (input, msje) => {
     const formControl = input.parentElement
