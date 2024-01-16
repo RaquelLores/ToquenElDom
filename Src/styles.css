@@ -232,60 +232,72 @@ footer img {
 
 
 /*AQUI EMPIEZAN LOS ESTILOS DE LA PAGINA DE CONTACTO*/
-.parent {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  /* dos columnas, una ocupa un 1/3 y otra 2/3 */
-  grid-template-rows: 1fr, 1fr;
-  row-gap: 3px;
-  padding: 3%;
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: -5%; 
+  margin: top -5px;
+  margin-left: 450px;
+  padding: 45px;
+  background-color: #3333CB;
+  color: #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 50px;
 }
 
-/* Estilos para la columna izquierda */
-.first-child {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  padding: 10px;
-  background-color: #F5F5F5;
-  list-style: none;
-  font-family: 'Open Sans';
+h2 {
+  margin-top: 0;
 }
 
-.second-child {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  padding: 10px;
-  background-color: #F5F5F5;
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
 }
 
-/* Estilos para la columna derecha*/
-.column-derecha {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end:3;
-  padding: 10px;
-}
-
-/* Estilos para el formulario */
-.third-child-form-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.name-field,
-.email-field,
-.text-field,
-.checkbox-field,
-.button-form {
-  margin-bottom: 15px;
-}
-
+input,
 textarea {
   width: 100%;
-  height: 100px;
+  padding: 8px;
+  margin-top: 6px;
+  margin-bottom: 16px;
   box-sizing: border-box;
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.checkbox-field input {
+  margin-right: 8px;
+}
+
+.checkbox-field label {
+  margin-bottom: 0;
+  color: #fff; /* Color blanco para el texto del enlace */
+}
+
+.checkbox-field a {
+  color: #fff; /* Color blanco para el enlace */
+  text-decoration: underline; /* Subrayado para el enlace */
+}
+
+
+button {
+  background-color: #FEC41D;
+  color: #3333CB;
+  font-family: Abril Fatface;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #27ae60;
 }
 
 /* empiezan los estilos del piano*/
@@ -312,6 +324,20 @@ textarea {
 .teclas_blancas {
   display: flex;
   gap: 0px; /* Ajusta el espacio entre las teclas blancas según sea necesario */
+}
+
+/*empiezan reglas de media queries para la página de contacto (se recomienda poner al final de la hoja de estilos/*
+/* Estilos para pantallas más pequeñas (hasta 600px de ancho) */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Estilos para pantallas más pequeñas (móviles) */
+@media only screen and (max-width: 600px) {
+  .container {
+     width: 100%;
+  }
 }
 
 
