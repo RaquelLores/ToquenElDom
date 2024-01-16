@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-/*aqui trminan los script de page_under_construction*/
+/*aqui terminan los script de page_under_construction*/
 /* Aquí empiezan los estilos JS del teclado */
 
 //aquí empiezan los estilos de js del piano
@@ -85,6 +85,17 @@ document.addEventListener('DOMContentLoaded', function () {
           });
       });
   });
+
+  //JS de la página de contacto
+  function enviarFormulario() {
+    var checkbox = document.getElementById('gridCheck');
+
+    if (checkbox.checked) {
+        window.alert('Tu mensaje se ha enviado.');
+    } else {
+        window.alert('Por favor, acepta la política de privacidad haciendo clic en la casilla.');
+    }
+}
 
 
 // Aquí empiezan los scripts de Contact
