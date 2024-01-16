@@ -23,6 +23,10 @@ header p {
     align-items: center;
 }
 /* Estilo para la lista de navegación */
+
+nav {
+    font-size: medium;
+}
 nav ul {
     list-style-type: none; /* Quita los puntos de la lista */
     margin: 0;
@@ -46,7 +50,7 @@ nav ul li a {
 
 .logo_navar {
     width: 10vw;
-    height: 17vh;
+    height: 10vh;
 }
 
 
@@ -79,8 +83,6 @@ nav ul li a {
 /*Estilo especifico para el footer*/
 
 footer {
-    margin: 0%;
-    margin-top: 5vw;
     background: linear-gradient(to top, #3333CB, #F5F5F5);
     /* La propiedad 'to bottom' indica que el degradado va de arriba hacia abajo */
     /* También puedes cambiar 'to bottom' a 'to top' si deseas que el degradado vaya de abajo hacia arriba */
@@ -101,6 +103,12 @@ footer {
 .footer_logo {
     width: 10vw;
     height: 10vh;
+    margin: 0 10px; /* Ajusta el margen entre las imágenes según sea necesario */
+}
+
+.rrss_footer {
+    width: 4vw;
+    height: 4vh;
     margin: 0 10px; /* Ajusta el margen entre las imágenes según sea necesario */
 }
 
@@ -135,3 +143,26 @@ footer img {
     text-align: center;
     color: #F5F5F5;
 }
+
+/*medias querys navar*/
+
+
+@media screen and (max-width: 450px) {
+
+    .logo_navar {
+        width: 9vw;
+        height: 9vh;
+
+    }
+   .name_logo_page_under_construction {
+      display: none;
+   }
+   nav {
+    font-size: small;
+   }
+
+/*mediasquerys footer*/
+    .footer_logo {
+       display: none;
+    }
+ }
