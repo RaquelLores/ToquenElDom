@@ -130,3 +130,31 @@ document.addEventListener('DOMContentLoaded', function () {
   tecla_blancasi.addEventListener("click",function(){
     return reproducirAudio("audiosi")
   });
+
+  //teclas negras
+
+  const dosostecla_negra = document.getElementById("dosostecla_negra")
+  dosostecla_negra.addEventListener("click",function(){
+    return reproducirAudio("audiodosos")
+  });
+
+  const resostecla_negra = document.getElementById("resostecla_negra")
+  resostecla_negra.addEventListener("click",function(){
+    return reproducirAudio("audioresos")
+  });
+
+  const fasostecla_negra = document.getElementById("fasostecla_negra")
+  fasostecla_negra.addEventListener("click",function(){
+    return reproducirAudio("audiofasos")
+  });
+
+  const solsostecla_negra = document.getElementById("solsostecla_negra")
+  solsostecla_negra.addEventListener("click",function(){
+    return reproducirAudio("audiosolsos")
+  });
+
+  const lasostecla_negra = document.getElementById("lasostecla_negra")
+  lasostecla_negra.addEventListener("click",function(){
+    return reproducirAudio("audiolasos")
+  });
+
