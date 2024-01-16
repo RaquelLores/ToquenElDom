@@ -5,17 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toquen el dom</title>
     <link rel="stylesheet" type="text/css" href="./Src/styles.css">
+    <link rel="icon" href="./Public/img_index/logo.png" type="tipo_de_imagen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body_index">
     <!-- MENÚ DE NAVEGACIÓN -->
     <header>
+        <div class="logo_page_under_construction">
+    <img class="logo_navar" src="/Public/img_index/logo.png" alt="in this picture u can see toque el dom logo">
+    <p class="name_logo_page_under_construction">Toquen el DOM</p>
+        </div>
         <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="./Pages/virtual_instruments/virtual_instruments.html">Instrumentos virtuales</a></li>
-            <li><a href="#about">About Us</a></li>
-            <!-- Opcional -->
-            <li><a href="./Pages/Contact/Contact.html">Contact</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="./virtual_instruments/Piano/Piano.html">Instrumentos virtuales</a></li>
+            <!--mediante el uso de <a hrref="/index.html#about"> al añadir #about inmediatamente detrás de /index.html nos redirige a una parte especifica  de una página externa-->
+            <li><a href="/index.html#about">About Us</a></li>
+            <li><a href="/Pages/Contact/Contact.html">Contact</a></li>
         </ul>
         </nav>
     </header>
@@ -37,6 +48,7 @@
         </div>
     </article>
     <!-- INTRO A LA PÁGINA -->
+    <article class="segunda_intro_index">
     <img class="profesora-y-niño" src="./Public/img_index/profesora-y-niño.jpeg" alt="">
     <div class="texto_bienvenida">
         ¡Bienvenidos a Toquen el DOM!
@@ -45,11 +57,15 @@ Nuestro compromiso es brindar una educación musical excepcional, combinando la 
 Con un enfoque innovador y recursos didácticos de vanguardia, creamos un ambiente inspirador que estimula la creatividad y el crecimiento personal. Aquí, la música no solo se enseña, ¡se vive!
 Únete a nuestra comunidad diversa y apasionada, donde cada nota es una oportunidad para descubrir tu propio ritmo y melodía. ¡Siente la música, crea tu historia en Toquen el DOM!
     </div>
+</article>
         <!-- GALERÍA DE INSTRUMENTOS VIRTUALES -->
-        <article>
-           <h1>Explora un universo de posibilidades musicales en nuestro espacio sonoro</h1>
-           <button>INSTRUMENTOS VIRTUALES</button>
-           <div>
+    <section id="virtual_instruments">
+        <article class="instrumentos_virtuales">
+            <div class="encabezado_instrumentos">
+           <h1 class="texto_instrumentos_virtuales">Explora un universo de posibilidades musicales en nuestro espacio sonoro</h1>
+           <button class="button_instrumentos">INSTRUMENTOS VIRTUALES</button>
+        </div>
+           <div class="logos_instrumentos">
             <img src="Public/img_index/piano-logo.png" alt="">
             <img src="Public/img_index/guitarra-logo.png" alt="">
             <img src="Public/img_index/bateria-logo.png" alt="">
@@ -59,7 +75,23 @@ Con un enfoque innovador y recursos didácticos de vanguardia, creamos un ambien
     </section>
     <!-- FOOTER -->
     <footer id="footer">
-        <p>Contacto: info@tuescuela.com</p>
+        <article class="footer_contactpart">
+            <img class="footer_logo" src="/Public/img_index/logo.png"alt="in this picture u can see toque el dom logo">
+        <aside class="contact_info_footer">
+            <p>Contacto</p>
+            <a class="telefono_footer" href="tel:+34685452985">685452985</a><a class="telefono_footer" href="tel:+34904768823"> - 904768823</a> <br>
+            <a class="correo_de_contacto_page_under_construction" href="mailto:Contacto@toqueneldom.com?subject=información%20sobre%20la%20escuela&amp;body=Necesito%20información%20sobre%20vuestra%20escuela%20para%20aprender%20a%20tocar%20un%20instrumento%20virtual">Contacto@toqueneldom.com</a> 
+            <p>C/de Amaniel, 2, Centro. 28015 Madrid</p>
+        </aside> 
+    </article>
+    <hr>
+    <article class="footer_socialmedia">
+        <img  class="logo_footer" src="/Public/img_index/logo.png" alt="">
+        <img  class="logo_footer" src="/Public/img_index/logo.png" alt="">
+        <img  class="logo_footer" src="/Public/img_index/logo.png" alt="">
+        <img  class="logo_footer" src="/Public/img_index/logo.png" alt="">
+    </article>
+    <p class="footer_copyright">Copyright    2014 Toquen el DOM.</p>
     </footer>
     <!--ENLACE A JAVA SCRIPT // PUEDE ENLAZARSE EN EL HEAD, SIN EMBARGO SE RECOMIENDA ENLAZARLO AL FINAL DEL BODY, PARA QUE ASÍ LA CARGA DE LA PÁGINA SEA MÁS RÁPIDA-->
     <script src="./Src/index.js"></script>

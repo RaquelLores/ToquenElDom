@@ -1,8 +1,8 @@
 /* aqui irá el área de estilos de todo el proyecto*/
-/*empiezan los estilos del index*/
-.body {
-  background-color: #F5F5F5;
+nav ul{
+    list-style: none;
 }
+<<<<<<< HEAD:Src/styles.css
 
 .logo_principal {
   width: 625px;
@@ -89,6 +89,7 @@
   /* Espacio entre el logo y el resto de los elementos, ajusta según sea necesario */
 }
 
+=======
 /*aquí terminan los estilos del navbar index*/
 
 
@@ -231,6 +232,7 @@ footer img {
 }
 
 
+>>>>>>> 392ee853d1d63fd56e45969718fb8afe979da3c7:Src/css/styles.css
 /*AQUI EMPIEZAN LOS ESTILOS DE LA PAGINA DE CONTACTO*/
 
 .container {
