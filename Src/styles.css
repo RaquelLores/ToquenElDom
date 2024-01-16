@@ -300,6 +300,12 @@ button:hover {
   background-color: #27ae60;
 }
 
+/* El recuadro de validación de contacto se coloreará en rojo cuando se falle al rellenarlo */
+.form-control.falla input {
+  border: 0.1px solid;
+  border-color: #fe5f55
+}
+
 /* empiezan los estilos del piano*/
 .conjunto_teclas{
   margin: 0;
