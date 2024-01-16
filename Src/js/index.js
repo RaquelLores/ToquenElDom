@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   });
 
-  //JS de la página de contacto
+  //JS de la página de contacto, botón y checkbox dinámicos
   function enviarFormulario() {
     var checkbox = document.getElementById('gridCheck');
 
