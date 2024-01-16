@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Toquen el dom</title>
+  <link rel="icon" href="/Public/img_index/logo.png" type="tipo_de_imagen">
   <link rel="stylesheet" href="/Src/styles.css">
 </head>
 
@@ -30,17 +31,17 @@
   <div class="container">
     <h2 class="titleContacto">Contáctanos</h2>
     <form action="#" method="post">
-      <label for="nombre">Tu nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
-
+      
+      <div class="form-control">
+        <label for="usuario">Tu nombre:</label>
+        <input id="usuario" type="text" name="name">
+        <p></p>
+      </div>
+      
       <label for="email">Tu email:</label>
       <input type="email" id="email" name="email" required>
 
-        <div class="form-control">
-          <label for="usuario">Tu nombre:</label>
-          <input id="usuario" type="text" name="name">
-          <p></p>
-        </div>
+        
       <label for="mensaje">Tu mensaje:</label>
       <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
