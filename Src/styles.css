@@ -94,13 +94,12 @@
     justify-content: space-between; /* Coloca los elementos en los extremos */
   }
 .profesora-y-niño {
-    width: 578px;
-height: 453px;
-flex-shrink: 0;
-border-radius: 100px;
-background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-max-width: 50%; /* Ajusta el ancho de la imagen según sea necesario */
-margin-left: 5%;
+  width: 40%;
+  height: 40%;
+  flex-shrink: 0;
+  border-radius: 20%;
+  max-width: 50%; /* Ajusta el ancho de la imagen según sea necesario */
+  margin-left: 5%;
 }
 .texto_bienvenida {
     width: 642px;
@@ -140,6 +139,23 @@ line-height: normal;
   margin: 0 2%; /* Añade un pequeño espacio entre las imágenes */
   max-width: 100%; /* Asegura que las imágenes no se extiendan más allá de su tamaño original */
   height: auto; /* Mantiene la proporción de la imagen al cambiar su ancho */
+}
+.encabezado_instrumentos {
+  display: flex; /* Utiliza el modelo flexbox para alinear los elementos en el contenedor */
+}
+.button_instrumentos {
+  background-color: transparent;
+  width: 371px;
+  height: 103px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border-color: #3333CB;
+  color: #3333CB;
+  font-family: Abril Fatface;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 /*aquí terminan los estilos del index*/
 nav ul{
