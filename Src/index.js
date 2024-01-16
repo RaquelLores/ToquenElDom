@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-/*aqui trminan los script de page_under_construction*/
+/*aqui terminan los script de page_under_construction*/
 /* Aquí empiezan los estilos JS del teclado */
 
 //aquí empiezan los estilos de js del piano
