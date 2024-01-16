@@ -132,6 +132,7 @@ color: #F5F5F5;
 }
 
 /* Media query para pantallas más pequeñas */
+
 @media screen and (max-width: 500px) {
 .logo_navar {
 width: 9vw;
@@ -166,3 +167,10 @@ color: #3333CB;
 display: block;
 }
 }
+
+@media screen and (min-width: 501px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+    
