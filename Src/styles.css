@@ -114,10 +114,10 @@ max-width: 45%; /* Ajusta el ancho del texto según sea necesario */
 margin-right: 5%;
 }
 .instrumentos_virtuales {
-    width: 1440px;
-height: 554px;
 flex-shrink: 0;
 background: linear-gradient(0deg, #FEC41D 3.88%, rgba(254, 196, 29, 0.00) 99.66%);
+padding-bottom: 10%;
+padding-top: 10%;
 }
 .texto_instrumentos_virtuales {
     width: 774px;
@@ -145,9 +145,8 @@ line-height: normal;
 }
 .button_instrumentos {
   background-color: transparent;
-  width: 371px;
-  height: 103px;
-  flex-shrink: 0;
+  width: 20%;
+  height: 40%;
   border-radius: 100px;
   border-color: #3333CB;
   color: #3333CB;
@@ -156,6 +155,13 @@ line-height: normal;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.logos_instrumentos img {
+  transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.logos_instrumentos img:hover {
+  transform: scale(1.2); /* Cambia el tamaño de la imagen al pasar el ratón */
 }
 /*aquí terminan los estilos del index*/
 nav ul{

@@ -34,3 +34,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 /*aqui trminan los script de page_under_construction*/
+
+//aquí empieza el js del index
