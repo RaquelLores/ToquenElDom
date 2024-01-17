@@ -8,7 +8,7 @@ header {
     align-items: center;
     height: 9vh;
     position: relative;
-    font-family: "abril fantasy";
+    font-family: Abril fatface;
 }
 
 header p {
@@ -39,11 +39,6 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #3333CB;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #fff;
 }
 
 .logo_navar {
@@ -63,6 +58,7 @@ nav ul li a:hover {
 
 .title_page_under_construction {
     font-size: 3vw;
+    font-family: Abril fatface;
     margin: 0%;
 }
 
@@ -76,9 +72,8 @@ nav ul li a:hover {
 }
 
 footer {
+    margin: 0;
     background: linear-gradient(to top, #3333CB, #F5F5F5);
-    width: 100%;
-    height: 100%;
     font-family: "open sans-serif";
     color: white;
     text-decoration: none;
@@ -94,7 +89,6 @@ footer {
 .footer_logo {
 width: 10vw;
 height: 10vh;
-margin: 0 10px;
 }
 
 .rrss_footer {
@@ -115,6 +109,7 @@ text-decoration: none;
 color: white;
 }
 
+
 footer img {
 margin: 3vw;
 width: 10vw;
@@ -132,17 +127,23 @@ color: #F5F5F5;
 }
 
 /* Media query para pantallas más pequeñas */
+@media screen and (max-width: 800px){
 
-@media screen and (max-width: 500px) {
+.name_logo_page_under_construction {
+    display: none;
+    }
+}
+
+
+@media screen and (max-width: 589px) {
 .logo_navar {
 width: 9vw;
-height: 9vh;
+height: 5vh;
 }
-.name_logo_page_under_construction {
-display: none;
-}
+
 nav {
 font-size: x-small;
+font-family: Abril Fatface;
 }
 nav ul {
 display: none;
@@ -162,9 +163,11 @@ nav ul li {
 display: block;
 margin: 1vw 5vh;
 }
+
 nav ul li a {
 color: #3333CB;
 }
+
 .menu-toggle {
 display: block;
 justify-content: center;
@@ -177,26 +180,35 @@ cursor: pointer;
 }
 
 .page_under_construction {
-    text-align: center;
+    margin-top: 5vh;
     color: #FF96D3;
 }
 
+.page_under_construction h1, h2 {
+    text-align: center;
+    font-size: large;
+}
 .page_under_construction img {
+    margin-top: 8vh;
     width: 40vw;
     height: 15vh;
 }
 
 .footer_logo {
-    display: none;
+    width: 9vw;
+    height: 5vh;
+    margin: 0 auto;
 }
 
 .footer_contactpart {
+    display: grid;
     font-size: small;
     text-align: center;
 }
 
 footer {
-    background: linear-gradient(to top, #FEC41D, #F5F5F5);
+    margin: 0;
+    background: linear-gradient(to top, #3333CB, #F5F5F5);
     width: 100%;
     height: 100%;
     font-family: "open sans-serif";
@@ -205,7 +217,7 @@ footer {
 }
 }
 
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 589px) {
     .menu-toggle {
         display: none;
     }
