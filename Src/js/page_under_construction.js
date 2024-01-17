@@ -1,42 +1,27 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     // Seleccionar todas las etiquetas <li>
     let todasLasEtiquetasLi = document.querySelectorAll('li');
 
     // Iterar sobre todas las etiquetas <li>
     todasLasEtiquetasLi.forEach(function(etiqueta) {
-        // Almacenar estilos originales para restablecer en 'mouseout'
-        let estiloOriginal = {
-            backgroundColor: getComputedStyle(etiqueta).backgroundColor,
-            color: getComputedStyle(etiqueta).color,
-            borderRadius: getComputedStyle(etiqueta).borderRadius,
-            opacity: getComputedStyle(etiqueta).opacity
-        };
-
         // Agregar evento de hover
         etiqueta.addEventListener('mouseover', function() {
-            etiqueta.style.backgroundColor = 'rgba(51, 51, 203, 0.8)';
-            etiqueta.style.color = '#fff';
-            etiqueta.style.borderRadius = "40%";
-            etiqueta.style.opacity = "10%";
+            // Agregar clase para aplicar el borde
+            etiqueta.classList.add('hovered');
         });
 
-        //eliminar evento hover cuando el mouse sale del area a modificar 
-        
+        // Eliminar clase hover cuando el mouse sale del área a modificar 
         etiqueta.addEventListener('mouseout', function() {
-            // Restablecer los estilos originales
-            etiqueta.style.backgroundColor = estiloOriginal.backgroundColor;
-            etiqueta.style.color = estiloOriginal.color;
-            etiqueta.style.borderRadius = estiloOriginal.borderRadius;
-            etiqueta.style.opacity = estiloOriginal.opacity;
+            // Quitar la clase para eliminar el borde
+            etiqueta.classList.remove('hovered');
         });
     });
 });
 
-    // Agregar evento al botón de menú para mostrar/ocultar el menú en pantallas pequeñas
-    let menuToggle = document.querySelector('.menu-toggle');
-    let navList = document.querySelector('nav ul');
+// Agregar evento al botón de menú para mostrar/ocultar el menú en pantallas pequeñas
+let menuToggle = document.querySelector('.menu-toggle');
+let navList = document.querySelector('nav ul');
 
-    menuToggle.addEventListener('click', function() {
-        navList.classList.toggle('show-menu');
-    });
+menuToggle.addEventListener('click', function() {
+    navList.classList.toggle('show-menu');
+});

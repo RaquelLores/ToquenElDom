@@ -9,7 +9,7 @@ header {
     position: fixed;
     align-items: center;
     justify-content: space-between;
-
+    padding: auto;
 }
 
 header p {
@@ -19,24 +19,28 @@ header p {
 .alineacionnavar {
     margin: 0;
     height: 9vh;
+    padding: auto;
 }
 
 .header {
 display: flex;
 align-items: center;
 background-color: #F5F5F5;
+padding: auto;
 }
 
 .logo_page_under_construction {
     display: flex;
     align-items: center;
     margin-right: auto; /* Alinea a la izquierda */
+    width: 25vw;
+    margin-left: 2vw;
 }
 
 nav {
-    width: 100vw;
+    width: 80vw;
     font-size: medium;
-    margin-left: 10vw; /* Alinea a la derecha */
+    margin-left: 15vw; /* Alinea a la derecha */
 }
 
 nav ul {
@@ -54,6 +58,16 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #3333CB;
+}
+
+li {
+    border-radius: 50%;
+    margin: 1vh;
+}
+
+li.hovered {
+    border: 3px solid #3333CB;
+    padding: 5px; /* Ajusta el espacio dentro del borde según sea necesario */
 }
 
 .logo_navar {
@@ -154,9 +168,20 @@ footer img {
     .name_logo_page_under_construction {
         display: none;
     }
+    .logo_page_under_construction {
+        width: 10vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    
+    nav {
+        width: 90vw;
+        `padding: 3vw;
+    }
 }
 
-@media screen and (max-width: 589px) {
+@media screen and (max-width: 650px) {
+
     .logo_navar {
         width: 9vw;
         height: 5vh;
@@ -165,7 +190,7 @@ footer img {
     nav {
         font-size: x-small;
         font-family: 'Abril Fatface', cursive;
-        margin-left: 0; /* Reinicia el margen */
+        justify-content: right; /* Reinicia el margen */
     }
 
     nav ul {
@@ -194,8 +219,6 @@ footer img {
 
     .menu-toggle {
         display: block;
-        justify-content: center;
-        margin-left: 60vw;
         padding: 1vw 2vh;
         background-color: #3498db;
         color: #fff;
@@ -203,14 +226,10 @@ footer img {
         cursor: pointer;
     }
 
-    .page_under_construction {
-        margin-top: 5vh;
-        color: #FF96D3;
-    }
-
     .page_under_construction h1, h2 {
         text-align: center;
         font-size: large;
+        color: #FF96D3;
     }
 
     .page_under_construction img {
@@ -242,7 +261,7 @@ footer img {
     }
 }
 
-@media screen and (min-width: 589px) {
+@media screen and (min-width: 650px) {
     .menu-toggle {
         display: none;
     }
