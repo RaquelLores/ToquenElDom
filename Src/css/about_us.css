@@ -10,7 +10,8 @@ body {
     flex-shrink: 0;
     font-weight: 400;
     line-height: normal;
-    padding: 5%;
+    padding-top: 10%;
+    padding-left: 4%;
     justify-content: center;
 }
 
