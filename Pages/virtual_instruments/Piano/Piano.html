@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" href="/Public/img_index/logo.png" type="tipo_de_imagen">
-    <link rel="stylesheet" href="/Src/styles.css">
+    <link rel="stylesheet" href="/Src/css/Piano.css">
+    <link rel="stylesheet" href="/Src/css/page_under_constructin.css">
 </head>
 <body>
     <header>
@@ -16,37 +17,49 @@
         <nav>
         <ul>
             <li><a href="/index.html">Home</a></li>
-            <li><a href="./virtual_instruments/Piano/Piano.html">Instrumentos virtuales</a></li>
+            <li><a href="./Piano.html">Instrumentos virtuales</a></li>
             <!--mediante el uso de <a hrref="/index.html#about"> al añadir #about inmediatamente detrás de /index.html nos redirige a una parte especifica  de una página externa-->
-            <li><a href="/index.html#about">About Us</a></li>
-            <li><a href="/Pages/Contact/Contact.html">Contact</a></li>
+            <li><a href="/index.html#aboutus">About Us</a></li>
+            <li><a href="/Pages/Contact.html">Contact</a></li>
         </ul>
         </nav>
     </header>
-<article class="conjunto_teclas">
-    <article class="teclas">
-    <div class="teclas_blancas">
-        <img class="do" width="94" height="365" src="/Public/teclas/tecla_blanca.svg">
-        <img class="re" width="94" height="365" src="/Public/teclas/tecla_blanca.svg">
-        <img class="mi" width="94" height="365" src="/Public/teclas/tecla_blanca.svg">
-        <img class="fa" width="94" height="365" src="/Public/teclas/tecla_blanca.svg">
-        <img class="sol" width="94" height="365" src="/Public/teclas/tecla_blanca.svg">
-        <img class="la" width="94" height="365" src="/Public/teclas/tecla_blanca.svg">
-        <img class="si" width="94" height="365" src="/Public/teclas/tecla_blanca.svg">
-    </div>
-    <div class="teclas_negras">
-        <div class="teclas_negras_primeras">
-            <img class="dosos" width="71" height="162" src="/Public/teclas/tecla_negra.svg">
-            <img class="resos" width="71" height="162" src="/Public/teclas/tecla_negra.svg">
+    <article class="conjunto_teclas">
+        <article class="teclas">
+        <div class="teclas_blancas">
+            <img class="do tecla_blanca" id="dotecla_blanca" width="94" height="365" src="/Public/teclas/tecla_blanca.svg" alt="">
+            <audio id="audiodo" src="/Public/audio/white-keys/sounds_white-keys_0.mp3"></audio>
+            <img class="re tecla_blanca" id="retecla_blanca" width="94" height="365" src="/Public/teclas/tecla_blanca.svg" alt="">
+            <audio id="audiore" src="/Public/audio/white-keys/sounds_white-keys_1.mp3"></audio>
+            <img class="mi tecla_blanca" id="mitecla_blanca" width="94" height="365" src="/Public/teclas/tecla_blanca.svg" alt="">
+            <audio id="audiomi" src="/Public/audio/white-keys/sounds_white-keys_2.mp3"></audio>
+            <img class="fa tecla_blanca" id="fatecla_blanca" width="94" height="365" src="/Public/teclas/tecla_blanca.svg" alt="">
+            <audio id="audiofa" src="/Public/audio/white-keys/sounds_white-keys_3.mp3"></audio>
+            <img class="sol tecla_blanca" id="soltecla_blanca" width="94" height="365" src="/Public/teclas/tecla_blanca.svg" alt="">
+            <audio id="audiosol" src="/Public/audio/white-keys/sounds_white-keys_4.mp3"></audio>
+            <img class="la tecla_blanca" id="latecla_blanca" width="94" height="365" src="/Public/teclas/tecla_blanca.svg" alt="">
+            <audio id="audiola" src="/Public/audio/white-keys/sounds_white-keys_5.mp3"></audio>
+            <img class="si tecla_blanca" id="sitecla_blanca" width="94" height="365" src="/Public/teclas/tecla_blanca.svg" alt="">
+            <audio id="audiosi" src="/Public/audio/white-keys/sounds_white-keys_6.mp3"></audio>
         </div>
-        <div class="teclas_negras_segundas">
-            <img class="fasos" width="71" height="162" src="/Public/teclas/tecla_negra.svg">
-            <img class="solsos" width="71" height="162" src="/Public/teclas/tecla_negra.svg">
-            <img class="lasos" width="71" height="162" src="/Public/teclas/tecla_negra.svg">
+        <div class="teclas_negras">
+            <div class="teclas_negras_primeras">
+                <img class="dosos tecla_negra" id="dosostecla_negra" width="71" height="162" src="/Public/teclas/tecla_negra.svg" alt="">
+                <audio id="audiodosos" src="/Public/audio/black-keys/sounds_black-keys_0.mp3"></audio>
+                <img class="resos tecla_negra" id="resostecla_negra" width="71" height="162" src="/Public/teclas/tecla_negra.svg" alt="">
+                <audio id="audioresos" src="/Public/audio/black-keys/sounds_black-keys_1.mp3"></audio>
+            </div>
+            <div class="teclas_negras_segundas">
+                <img class="fasos tecla_negra" id="fasostecla_negra" width="71" height="162" src="/Public/teclas/tecla_negra.svg" alt="">
+                <audio id="audiofasos" src="/Public/audio/black-keys/sounds_black-keys_2.mp3"></audio>
+                <img class="solsos tecla_negra" id="solsostecla_negra" width="71" height="162" src="/Public/teclas/tecla_negra.svg" alt="">
+                <audio id="audiosolsos" src="/Public/audio/black-keys/sounds_black-keys_3.mp3"></audio>
+                <img class="lasos tecla_negra" id="lasostecla_negra" width="71" height="162" src="/Public/teclas/tecla_negra.svg" alt="">
+                <audio id="audiolasos" src="/Public/audio/black-keys/sounds_black-keys_4.mp3"></audio>
+            </div>
         </div>
-    </div>
+        </article>
     </article>
-</article>
             <!-- FOOTER -->
     <footer id="footer">
         <article class="footer_contactpart">
@@ -67,6 +80,7 @@
             </article>
             <p class="footer_copyright">Copyright    2014 Toquen el DOM.</p>
             </footer>
-    <script src="/Src/index.js"></script>
+    <script src="/Src/js/piano.js"></script>
+    <script src="/Src/js/page_under_construction.js"></script>
 </body>
 </html>

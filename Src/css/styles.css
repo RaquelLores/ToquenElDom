@@ -1,73 +1,95 @@
-/* aqui irá el área de estilos de todo el proyecto*/
-nav ul{
-    list-style: none;
-}
-/*aquí terminan los estilos del navbar index*/
-
-
-/* Estilo para la barra de navegación */
 /* Estilo para el encabezado */
-
 header {
-    margin:  0;
-    background-color: #F5F5F5; /* Color de fondo de la barra de navegación */
-    padding: 5vh; /* Espaciado interno en el encabezado */
-    display: flex; /* Utiliza el modelo de caja flexible para alinear elementos hijos */
-    justify-content: space-around;
-    align-items: center; /* Centra los elementos verticalmente */
+    background-color: #F5F5F5;
+    width: 100vw;
+    display: flex;
     height: 9vh;
-    position: relative; 
-    font-family: abril fantasy;
+    font-family: 'Abril Fatface', cursive;
+    transition: all 0.5s ease;
+    position: fixed;
+    align-items: center;
     justify-content: space-between;
+    padding: auto;
 }
 
 header p {
     color: #3333CB;
 }
 
+.alineacionnavar {
+    margin: 0;
+    height: 9vh;
+    padding: auto;
+}
+
+.header {
+display: flex;
+align-items: center;
+background-color: #F5F5F5;
+padding: auto;
+}
+
 .logo_page_under_construction {
     display: flex;
     align-items: center;
+    margin-right: auto; /* Alinea a la izquierda */
+    width: 25vw;
+    margin-left: 2vw;
 }
-/* Estilo para la lista de navegación */
+
+nav {
+    width: 80vw;
+    font-size: medium;
+    margin-left: 15vw; /* Alinea a la derecha */
+}
+
 nav ul {
-    list-style-type: none; /* Quita los puntos de la lista */
+    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-/* Estilo para los elementos de la lista de navegación */
 nav ul li {
-    display: inline; /* alinea los elementos de la lista en línea */
-    margin-right: 5vw ; /* Espaciado entre elementos de la lista */
+    display: inline;
+    margin-right: 5vw;
 }
 
-/* Estilo para los enlaces de navegación */
 nav ul li a {
-    text-decoration: none; /* Quita el subrayado del enlace */
-    color:#3333CB; /* Color del texto del enlace */
+    text-decoration: none;
+    color: #3333CB;
 }
 
-/* Estilo específico para el logo en la barra de navegación */
+li {
+    border-radius: 50%;
+    margin: 1vh;
+}
+
+li.hovered {
+    border: 3px solid #3333CB;
+    padding: 5px; /* Ajusta el espacio dentro del borde según sea necesario */
+}
 
 .logo_navar {
     width: 10vw;
-    height: 17vh;
+    height: 10vh;
 }
-/*Estilo especifico para el footer*/
+
+/* Líneas horizontales en el header */
+header hr {
+    margin: 0;
+    visibility: visible;
+    border: 0;
+    height: 4px;
+    background-color: #3333CB; /* Color azul */
+}
 
 footer {
-    margin: 0%;
-    margin-top: 5vw;
+    margin: 0;
     background: linear-gradient(to top, #3333CB, #F5F5F5);
-    /* La propiedad 'to bottom' indica que el degradado va de arriba hacia abajo */
-    /* También puedes cambiar 'to bottom' a 'to top' si deseas que el degradado vaya de abajo hacia arriba */
-    width: 100%;
-    height: 100%;
-    font-family: open sans-serif;
+    font-family: 'open sans-serif';
     color: white;
-    text-decoration: none; /* Quita el subrayado del enlace */
+    text-decoration: none;
 }
 
 .footer_contactpart {
@@ -80,7 +102,12 @@ footer {
 .footer_logo {
     width: 10vw;
     height: 10vh;
-    margin: 0 10px; /* Ajusta el margen entre las imágenes según sea necesario */
+}
+
+.rrss_footer {
+    width: 4vw;
+    height: 4vh;
+    margin: 0 10px;
 }
 
 .footer_socialmedia {
@@ -89,14 +116,10 @@ footer {
     align-items: center;
 }
 
-.correo_de_contacto_page_under_construction {
-    text-decoration: none; /* Quita el subrayado del enlace */
-    color: white; /* Color del texto del enlace */
-}
-
+.correo_de_contacto_page_under_construction,
 .telefono_footer {
-    text-decoration: none; /* Quita el subrayado del enlace */
-    color: white; /* Color del texto del enlace */
+    text-decoration: none;
+    color: white;
 }
 
 footer img {
@@ -106,7 +129,7 @@ footer img {
 }
 
 #footer hr {
-    border-color: white; /* Color blanco para los hr en el footer */
+    border-color: white;
 }
 
 .footer_copyright {
@@ -115,11 +138,100 @@ footer img {
     color: #F5F5F5;
 }
 
-/*empiezan reglas de media queries para la página de contacto (se recomienda poner al final de la hoja de estilos/*
-/* Estilos para pantallas más pequeñas (hasta 600px de ancho) */
-.container {
-  width: 80%;
-  margin: 0 auto;
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 800px) {
+    .name_logo_page_under_construction {
+        display: none;
+    }
+    .logo_page_under_construction {
+        width: 10vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    
+    nav {
+        width: 90vw;
+        padding: 3vw;
+    }
+
+    li.hovered {
+        border: 3px solid #3333CB;
+        padding: 5px; /* Ajusta el espacio dentro del borde según sea necesario */
+    }
 }
 
+@media screen and (max-width: 650px) {
+
+    .logo_navar {
+        width: 9vw;
+        height: 5vh;
+    }
+
+    nav {
+        font-size: x-small;
+        font-family: 'Abril Fatface', cursive;
+        justify-content: right; /* Reinicia el margen */
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 15vh;
+        left: 0;
+        width: 100vw;
+        height: 18vh;
+    }
+
+    nav ul.show-menu {
+        display: flex;
+        align-items: end;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 1vw 5vh;
+    }
+
+    nav ul li a {
+        color: #3333CB;
+    }
+
+    .menu-toggle {
+        display: block;
+        padding: 1vw 2vh;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .footer_logo {
+        width: 9vw;
+        height: 5vh;
+        margin: 0 auto;
+    }
+
+    .footer_contactpart {
+        display: grid;
+        font-size: small;
+        text-align: center;
+    }
+
+    footer {
+        margin: 0;
+        background: linear-gradient(to top, #3333CB, #F5F5F5);
+        width: 100%;
+        height: 100%;
+        font-family: 'open sans-serif';
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .menu-toggle {
+        display: none;
+    }
+}
 
