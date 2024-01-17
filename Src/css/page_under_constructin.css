@@ -148,23 +148,32 @@ nav ul {
 display: none;
 flex-direction: column;
 position: absolute;
-top: 9vh;
+top: 15vh;
 left: 0;
-width: 100%;
-background-color: #F5F5F5;
+width: 100vw;
+height: 18vh;
 }
 nav ul.show-menu {
 display: flex;
+align-items: end;
 }
+
 nav ul li {
 display: block;
-margin: 5px 0;
+margin: 1vw 5vh;
 }
 nav ul li a {
 color: #3333CB;
 }
 .menu-toggle {
 display: block;
+justify-content: center;
+margin-left: 60vw;
+padding: 1vw 2vh;
+background-color: #3498db;
+color: #fff;
+border: none;
+cursor: pointer;
 }
 }
 
