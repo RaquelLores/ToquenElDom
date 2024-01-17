@@ -2,15 +2,26 @@
 .body_index {
     background-color: #F5F5F5;
   }
-  
+  .primer_body_index {
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente los elementos */
+  }
+
   .logo_principal {
     width: 625px;
     height: 625px;
-    flex-shrink: 0;
-    flex: 1;
-    /* Toma el espacio restante en el contenedor */
   }
-  
+    
+  .imagenes_body_index {
+  display: flex;
+  }
+  .parte_primera_index {
+    display: flex;
+  }
+  .parte_segunda_index {
+    display: flex;
+  }
   .fondo_amarillo_index {
     width: 308px;
     height: 216px;
@@ -24,10 +35,7 @@
     font-weight: 400;
     line-height: normal;
     position: relative;
-    padding: 20px;
-    /* Ajusta el relleno según sea necesario */
-    order: 1;
-    /* Coloca fondo_amarillo_index en la primera posición */
+    padding: 20px;/* Ajusta el relleno según sea necesario */
   }
   
   .texto_primero_index {
@@ -51,8 +59,7 @@
     height: 373px;
     flex-shrink: 0;
     border-radius: 200px 200px 0px 0px;
-    order: 2;
-    /* Coloca agua en la segunda posición */
+    margin-top: -100px;
   }
   
   .guitarristas {
@@ -60,8 +67,7 @@
     height: 401px;
     flex-shrink: 0;
     border-radius: 200px 0px 0px 0px;
-    order: 3;
-    /* Coloca guitarristas en la tercera posición */
+    margin-left: 30px;
   }
   
   .piano-foto {
@@ -69,23 +75,8 @@
     height: 193px;
     flex-shrink: 0;
     border-radius: 200px 0px 0px 200px;
-    order: 4;
-    /* Coloca piano-foto en la cuarta posición */
-  }
-  
-  .primer_body_index {
-    display: flex;
-    flex-direction: row;
-    /* Alinea los elementos en fila (horizontalmente) */
-    align-items: center;
-    /* Centra verticalmente los elementos */
-  }
-  
-  .imagenes_body_index {
-    order: 1;
-    /* Cambia el orden para colocar el logo primero */
-    margin-right: 20px;
-    /* Espacio entre el logo y el resto de los elementos, ajusta según sea necesario */
+    margin-top: 50px;
+    margin-left: 30px;
   }
   .segunda_intro_index {
       display: flex;
