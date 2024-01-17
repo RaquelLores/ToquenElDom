@@ -1,0 +1,213 @@
+/* Estilo para el encabezado */
+header {
+    margin: 0;
+    background-color: #F5F5F5;
+    padding: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9vh;
+    position: relative;
+    font-family: "abril fantasy";
+}
+
+header p {
+    color: #3333CB;
+}
+
+.logo_page_under_construction {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    font-size: medium;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 5vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3333CB;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+.logo_navar {
+    width: 10vw;
+    height: 10vh;
+}
+
+.PageUnderConstruction {
+    margin: 0;
+    background-color: #F5F5F5;
+}
+
+.page_under_construction {
+    text-align: center;
+    color: #3333CB;
+}
+
+.title_page_under_construction {
+    font-size: 3vw;
+    margin: 0%;
+}
+
+.h2_page_under_construction {
+    font-size: 1vw;
+}
+
+.page_under_construction img {
+    width: 60vw;
+    height: 30vh;
+}
+
+footer {
+    background: linear-gradient(to top, #3333CB, #F5F5F5);
+    width: 100%;
+    height: 100%;
+    font-family: "open sans-serif";
+    color: white;
+    text-decoration: none;
+}
+
+.footer_contactpart {
+    padding: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_logo {
+width: 10vw;
+height: 10vh;
+margin: 0 10px;
+}
+
+.rrss_footer {
+width: 4vw;
+height: 4vh;
+margin: 0 10px;
+}
+
+.footer_socialmedia {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.correo_de_contacto_page_under_construction,
+.telefono_footer {
+text-decoration: none;
+color: white;
+}
+
+footer img {
+margin: 3vw;
+width: 10vw;
+height: 10vh;
+}
+
+#footer hr {
+border-color: white;
+}
+
+.footer_copyright {
+font-size: small;
+text-align: center;
+color: #F5F5F5;
+}
+
+/* Media query para pantallas más pequeñas */
+
+@media screen and (max-width: 500px) {
+.logo_navar {
+width: 9vw;
+height: 9vh;
+}
+.name_logo_page_under_construction {
+display: none;
+}
+nav {
+font-size: x-small;
+}
+nav ul {
+display: none;
+flex-direction: column;
+position: absolute;
+top: 15vh;
+left: 0;
+width: 100vw;
+height: 18vh;
+}
+nav ul.show-menu {
+display: flex;
+align-items: end;
+}
+
+nav ul li {
+display: block;
+margin: 1vw 5vh;
+}
+nav ul li a {
+color: #3333CB;
+}
+.menu-toggle {
+display: block;
+justify-content: center;
+margin-left: 60vw;
+padding: 1vw 2vh;
+background-color: #3498db;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+
+.page_under_construction {
+    text-align: center;
+    color: #FF96D3;
+}
+
+.page_under_construction img {
+    width: 40vw;
+    height: 15vh;
+}
+
+.footer_logo {
+    display: none;
+}
+
+.footer_contactpart {
+    font-size: small;
+    text-align: center;
+}
+
+footer {
+    background: linear-gradient(to top, #FEC41D, #F5F5F5);
+    width: 100%;
+    height: 100%;
+    font-family: "open sans-serif";
+    color: white;
+    text-decoration: none;
+}
+}
+
+@media screen and (min-width: 501px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+    

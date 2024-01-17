@@ -6,87 +6,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Toquen el dom</title>
   <link rel="stylesheet" href="/Src/styles.css">
-
 </head>
 
 <body>
   <!-- MENÚ DE NAVEGACIÓN -->
   <header>
+    <div class="logo_page_under_construction">
+      <img class="logo_navar" src="/Public/img_index/logo.png" alt="in this picture u can see toque el dom logo">
+      <p class="name_logo_page_under_construction">Toquen el DOM</p>
+    </div>
     <nav>
       <ul>
         <li><a href="/index.html">Home</a></li>
-        <li><a href="./virtual_instruments/virtual_instruments.html">Instrumentos virtuales</a></li>
+        <li><a href="./virtual_instruments/Piano/Piano.html">Instrumentos virtuales</a></li>
         <!--mediante el uso de <a hrref="/index.html#about"> al añadir #about inmediatamente detrás de /index.html nos redirige a una parte especifica  de una página externa-->
         <li><a href="/index.html#about">About Us</a></li>
-        <!-- Opcional -->
-        <li><a href="#services">Services</a></li>
-        <li><a href="./Pages/Contact/Contact.html">Contact</a></li>
+        <li><a href="/Pages/Contact/Contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- CUERPO PRINCIPAL LA SECCIÓN CONTACTO CON GRID -->
-  <div class="parent">
-  <!-- Contenido de la columna izquierda -->
+  <!-- CUERPO PRINCIPAL LA SECCIÓN CONTACTO -->
+  <div class="container">
+    <h2 class="titleContacto">Contáctanos</h2>
+    <form action="#" method="post">
+      <label for="nombre">Tu nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
 
-    <div class="first-child">
-      <ul class="tel-address-email">
-        <li class="contacto">Contacto</li>
-        <li class="tel">685452985 - 902768823</li>
-        <li class="address">C/ Amaniel, 2 28015 Madrid</li>
-        <li class="email">contacto@toqueneldom.com<a href="mailto:contacto@toqueneldom.com"></a></li>
-      </ul>
-    </div>
+      <label for="email">Tu email:</label>
+      <input type="email" id="email" name="email" required>
 
-    <div class="second-child">
-      <map><a><iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.2645607851273!2d-3.711678325487745!3d40.42514035512978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228648c8e3beb%3A0xb3719411609df21c!2sC.%20de%20Amaniel%2C%202%2C%20Centro%2C%2028015%20Madrid!5e0!3m2!1ses!2ses!4v1705154079684!5m2!1ses!2ses"
-            width="300" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe></a></map>
-    </div>
-
-    <div class="grid-container">
-      <!-- Contenido de la columna derecha -->
-    <div class="grid-container"> 
-      <div class="column-derecha">
-        <div class="third-child-form-title">Envíanos tu mensaje</div>
-
-        <div class="name-field">
-          <label for="name">Tu nombre</label>
-          <input type="name" id="name" name="name">
+        <div class="form-control">
+          <label for="usuario">Tu nombre:</label>
+          <input id="usuario" type="text" name="name">
+          <p></p>
         </div>
+      <label for="mensaje">Tu mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-        <div class="email-field">
-          <label for="email">Tu correo electrónico</label>
-          <input type="email" id="email" name="email">
-        </div>
-
-        <div class="text-field">
-          <label for="text">Tu mensaje</label>
-          <textarea id="text" name="text"></textarea>
-        </div>
-
-        <div class="checkbox-field">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            Acepto la <a href="/Pages/PrivacyPolicy.html" target="_blank">política de privacidad</a>
-          </label>
-        </div>
-
-        <div class="button-form">
-          <button type="button" class="btn btn-warning">Enviar</button>
-        </div>
+      <div class="checkbox-field">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Acepto la <a href="/Pages/PrivacyPolicy.html" target="_blank">política de privacidad</a>
+        </label>
       </div>
-    </div>
 
-
-
+      <button type="button" onclick="enviarFormulario()"><strong>Enviar</strong></button>
+    </form>
+  </div>
+  
     <!-- FOOTER -->
     <footer id="footer">
-      <p>Contacto: info@tuescuela.com</p>
-    </footer>
-    <!--ENLACE A JAVA SCRIPT // PUEDE ENLAZARSE EN EL HEAD, SIN EMBARGO SE RECOMIENDA ENLAZARLO AL FINAL DEL BODY, PARA QUE ASÍ LA CARGA DE LA PÁGINA SEA MÁS RÁPIDA-->
-    <script src=".index.js"></script>
+      <article class="footer_contactpart">
+          <img class="footer_logo" src="/Public/img_index/logo.png"alt="in this picture u can see toque el dom logo">
+      <aside class="contact_info_footer">
+        <p>Contacto</p>
+        <a class="telefono_footer" href="tel:+34685452985">685452985</a><a class="telefono_footer"
+          href="tel:+34904768823"> - 904768823</a> <br>
+        <a class="correo_de_contacto_page_under_construction"
+          href="mailto:Contacto@toqueneldom.com?subject=información%20sobre%20la%20escuela&amp;body=Necesito%20información%20sobre%20vuestra%20escuela%20para%20aprender%20a%20tocar%20un%20instrumento%20virtual">Contacto@toqueneldom.com</a>
+        <p>C/de Amaniel, 2, Centro. 28015 Madrid</p>
+      </aside>
+    </article>
+    <hr>
+    <article class="footer_socialmedia">
+      <img class="logo_footer" src="/Public/img_index/logo.png" alt="">
+      <img class="logo_footer" src="/Public/img_index/logo.png" alt="">
+      <img class="logo_footer" src="/Public/img_index/logo.png" alt="">
+      <img class="logo_footer" src="/Public/img_index/logo.png" alt="">
+    </article>
+    <p class="footer_copyright">Copyright 2014 Toquen el DOM.</p>
+  </footer>
+  <!--ENLACE A JAVA SCRIPT  // PUEDE ENLAZARSE EN EL HEAD, SIN EMBARGO SE RECOMIENDA ENLAZARLO AL FINAL DEL BODY, PARA QUE ASÍ LA CARGA DE LA PÁGINA SEA MÁS RÁPIDA-->
+  <script src="/Src/index.js"></script>
 </body>
 
 </html>
