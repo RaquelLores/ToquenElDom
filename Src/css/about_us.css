@@ -1,0 +1,58 @@
+body {
+    justify-content: center;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: row;
+    color: #3333cb;
+    width: 1200px;
+    flex-shrink: 0;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 10%;
+    padding-left: 4%;
+    justify-content: center;
+}
+
+.title-about-us {
+    width: 1000px;
+    font-size: 35px;
+    padding-left: 5%;
+    padding-bottom: 10%;
+}
+
+.text-about-us {
+   padding-left: 10%;
+   padding-top: 3%;
+   font-size: 19px;
+}
+
+.parent {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0.5%;
+    justify-content: center;
+}
+
+img {
+    width: 320px;
+    height: 320px;
+}
+
+.description-maria, .description-ana, .description-sofia, .description-elena {
+    width: 320px;
+    height: 320px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 3.5%;
+    color: #f5f5f5;
+}
+
+.description-maria, .description-elena {
+    background-color: #ff96d3;
+}
+
+.description-ana, .description-sofia {
+    background-color: #00DDB5;
+}
