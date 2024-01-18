@@ -125,3 +125,78 @@ document.addEventListener('DOMContentLoaded', function () {
     return reproducirAudio("audiolasos")
   });
 
+//TOCAR EL PIANO CON EL TECLADO
+document.addEventListener('DOMContentLoaded', function () {
+  let teclasBlancas = document.querySelectorAll('.tecla_blanca');
+
+  teclasBlancas.forEach(function (tecla) {
+      tecla.addEventListener('click', function () {
+          manejarClick(tecla);
+      });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  let teclasNegras = document.querySelectorAll('.tecla_negra');
+
+  teclasNegras.forEach(function (tecla) {
+      tecla.addEventListener('click', function () {
+          manejarClick(tecla);
+      });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('keydown', function (e) {
+      manejarTecla(e);
+  });
+});
+
+function manejarClick(tecla) {
+  const idSonido = obtenerIdSonido(tecla);
+  reproducirAudio(idSonido);
+  cambiarImagen(tecla);
+}
+
+function manejarTecla(e) {
+  const idSonido = obtenerIdSonidoPorTecla(e.code);
+  if (idSonido) {
+      reproducirAudio(idSonido);
+      const tecla = document.getElementById(`${idSonido.replace("audio", "")}tecla_blanca`);
+      cambiarImagen(tecla);
+  }
+}
+
+function obtenerIdSonido(tecla) {
+  return tecla.id.replace("tecla_blanca", "audio");
+}
+
+function obtenerIdSonidoPorTecla(codigoTecla) {
+  const mapeoTeclas = {
+      KeyA: "audiodo",
+      KeyS: "audiore",
+      KeyD: "audiomi",
+      KeyF: "audiofa",
+      KeyG: "audiosol",
+      KeyH: "audiola",
+      KeyJ: "audiosi",
+      // Puedes agregar más teclas según sea necesario
+  };
+
+  return mapeoTeclas[codigoTecla];
+}
+
+function cambiarImagen(tecla) {
+  if (tecla) {
+      tecla.src = `/Public/teclas/tecla_blanca_pulsada.svg`;
+
+      setTimeout(function () {
+          tecla.src = `/Public/teclas/tecla_blanca.svg`;
+      }, 500);
+  }
+}
+
+// Resto del código de reproducción de audio y asignación de eventos de clic
+
+
+
