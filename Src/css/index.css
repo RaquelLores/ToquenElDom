@@ -172,3 +172,5 @@
     transform: scale(1.2); /* Cambia el tamaño de la imagen al pasar el ratón */
   }
   /*aquí terminan los estilos del index*/
+
+ /* Media Query para pantallas más grandes (mayor a 600px) */

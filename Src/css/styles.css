@@ -1,8 +1,11 @@
 /*estilos generales*/
 
-body{
-    background-color: #F5F5F5;   
+/* Estilos generales para el body */
+body {
+    background-color: #F5F5F5;
+    margin-top: 12vh; /* Añade un margen superior igual a la altura del header */
 }
+
 /* Estilo para el encabezado */
 header {
     background-color: #F5F5F5;
@@ -16,6 +19,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: auto;
+    top: 0; /* Fija el encabezado en la parte superior */
 }
 
 header p {
