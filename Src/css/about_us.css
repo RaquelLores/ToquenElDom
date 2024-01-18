@@ -16,16 +16,17 @@ body {
 }
 
 .title-about-us {
-    width: 1000px;
-    font-size: 35px;
+    font-size: 40px;
     padding-left: 5%;
     padding-bottom: 10%;
+    font-family: 'Abril Fatface', serif;
 }
 
 .text-about-us {
    padding-left: 10%;
    padding-top: 3%;
    font-size: 19px;
+   font-family: 'Open Sans', sans-serif;
 }
 
 .parent {
@@ -44,9 +45,10 @@ img {
     width: 320px;
     height: 320px;
     box-sizing: border-box;
-    text-align: center;
+    text-align: justify;
     padding: 3.5%;
     color: #f5f5f5;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .description-maria, .description-elena {
