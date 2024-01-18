@@ -2,15 +2,26 @@
 .body_index {
     background-color: #F5F5F5;
   }
-  
+  .primer_body_index {
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente los elementos */
+  }
+
   .logo_principal {
     width: 625px;
     height: 625px;
-    flex-shrink: 0;
-    flex: 1;
-    /* Toma el espacio restante en el contenedor */
   }
-  
+    
+  .imagenes_body_index {
+  display: flex;
+  }
+  .parte_primera_index {
+    display: flex;
+  }
+  .parte_segunda_index {
+    display: flex;
+  }
   .fondo_amarillo_index {
     width: 308px;
     height: 216px;
@@ -19,15 +30,12 @@
     background: linear-gradient(108deg, rgba(254, 196, 29, 0.00) -29.08%, #FEC41D 41.26%, rgba(254, 196, 29, 0.00) 106.83%);
     color: #3333CB;
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     position: relative;
-    padding: 20px;
-    /* Ajusta el relleno según sea necesario */
-    order: 1;
-    /* Coloca fondo_amarillo_index en la primera posición */
+    padding: 20px;/* Ajusta el relleno según sea necesario */
   }
   
   .texto_primero_index {
@@ -51,8 +59,7 @@
     height: 373px;
     flex-shrink: 0;
     border-radius: 200px 200px 0px 0px;
-    order: 2;
-    /* Coloca agua en la segunda posición */
+    margin-top: -100px;
   }
   
   .guitarristas {
@@ -60,8 +67,7 @@
     height: 401px;
     flex-shrink: 0;
     border-radius: 200px 0px 0px 0px;
-    order: 3;
-    /* Coloca guitarristas en la tercera posición */
+    margin-left: 30px;
   }
   
   .piano-foto {
@@ -69,23 +75,8 @@
     height: 193px;
     flex-shrink: 0;
     border-radius: 200px 0px 0px 200px;
-    order: 4;
-    /* Coloca piano-foto en la cuarta posición */
-  }
-  
-  .primer_body_index {
-    display: flex;
-    flex-direction: row;
-    /* Alinea los elementos en fila (horizontalmente) */
-    align-items: center;
-    /* Centra verticalmente los elementos */
-  }
-  
-  .imagenes_body_index {
-    order: 1;
-    /* Cambia el orden para colocar el logo primero */
-    margin-right: 20px;
-    /* Espacio entre el logo y el resto de los elementos, ajusta según sea necesario */
+    margin-top: 50px;
+    margin-left: 30px;
   }
   .segunda_intro_index {
       display: flex;
@@ -139,13 +130,25 @@
     max-width: 100%; /* Asegura que las imágenes no se extiendan más allá de su tamaño original */
     height: auto; /* Mantiene la proporción de la imagen al cambiar su ancho */
   }
+  .logos_instrumentos a {
+    margin-right: 5%; /* Ajusta el margen entre cada enlace (imagen) según tus necesidades */
+  }
+  
+  /* Elimina el margen derecho de la última imagen para evitar espacio adicional */
+  .logos_instrumentos a:last-child {
+    margin-right: 0;
+  }
   .encabezado_instrumentos {
     display: flex; /* Utiliza el modelo flexbox para alinear los elementos en el contenedor */
+    justify-content: space-between;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
   }
   .button_instrumentos {
     background-color: transparent;
-    width: 20%;
-    height: 40%;
+    width: 100%;
+    height: 100%;
     border-radius: 100px;
     border-color: #3333CB;
     color: #3333CB;
@@ -154,6 +157,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+  .button_instrumentos:hover {
+    background-color: #FF96D3; /* Nuevo color de fondo al pasar el ratón */
+    color: #F5F5F5; /* Nuevo color de texto al pasar el ratón */
+    border-color: #FF96D3;
   }
   .logos_instrumentos img {
     transition: transform 0.3s ease; /* Agrega una transición suave */

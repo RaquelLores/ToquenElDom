@@ -1,0 +1,56 @@
+/* Estilos generales del piano */
+.conjunto_teclas {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    order: -1;
+}
+
+.teclas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    order: -1;
+}
+
+.teclas_negras {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 12vw; /* Ajusta el espacio entre las teclas negras en vw según sea necesario */
+    order: -1;
+    
+}
+
+.teclas_blancas {
+    display: flex;
+    gap: 0; /* No se ajusta el espacio entre las teclas blancas en vw */
+}
+
+/* Media Query para pantallas de hasta 500px */
+@media screen and (max-width: 650px) {
+    .conjunto_teclas {
+        margin-top: 10vh; /* Ajusta la distancia desde la parte superior en vh según sea necesario */
+    }
+
+    .teclas {
+        position: relative;
+        width: 100vw; /* Hace que el conjunto de teclas ocupe el 100% del ancho de la pantalla */
+    }
+
+    .teclas_negras {
+        gap: 2vh; /* Ajusta el espacio entre las teclas negras en vh según sea necesario */
+    }
+
+    .teclas_blancas img,
+    .teclas_negras img {
+        width: 10vw; /* Ajusta el ancho de las teclas blancas y negras al 10% del ancho de la pantalla */
+        max-width: 10vw; /* Ajusta el ancho máximo en vw según sea necesario */
+        height: auto; /* Mantiene la proporción de la altura */
+    }
+}
