@@ -12,6 +12,7 @@ header {
     font-family: 'Abril Fatface', cursive;
     transition: all 0.5s ease;
     position: fixed;
+    z-index: 2;
     align-items: center;
     justify-content: space-between;
     padding: auto;
@@ -76,8 +77,8 @@ li.hovered {
 }
 
 .logo_navar {
-    width: 10vw;
-    height: 10vh;
+    width: 5vw;
+    height: 9vh;
 }
 
 /* Líneas horizontales en el header */
@@ -129,8 +130,8 @@ footer {
 
 footer img {
     margin: 3vw;
-    width: 10vw;
-    height: 10vh;
+    width: 5vw;
+    height: 9vh;
 }
 
 #footer hr {
