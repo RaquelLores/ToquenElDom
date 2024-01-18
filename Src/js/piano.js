@@ -441,5 +441,5 @@ function cambiarImagen(tecla) {
 
 // Resto del código de reproducción de audio y asignación de eventos de clic
 
-
-
+}
+)
