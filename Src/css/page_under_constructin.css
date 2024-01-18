@@ -1,0 +1,51 @@
+
+.PageUnderConstruction {
+    background-color: #F5F5F5;
+}
+
+.page_under_construction {
+    text-align: center;
+    color: #3333CB;
+}
+
+.title_page_under_construction {
+    font-size: 3vw;
+    font-family: 'Abril Fatface', cursive;
+    margin: 0%;
+}
+
+.h2_page_under_construction {
+    font-size: 1vw;
+}
+
+.page_under_construction img {
+    width: 60vw;
+    height: 30vh;
+}
+
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .page_under_construction h1, h2 {
+        text-align: center;
+        font-size: large;
+        color: #FF96D3;
+    }
+
+    .page_under_construction img {
+        margin-top: 8vh;
+        width: 40vw;
+        height: 15vh;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .menu-toggle {
+        display: none;
+    }
+}
