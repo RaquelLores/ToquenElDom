@@ -174,3 +174,27 @@
   /*aquí terminan los estilos del index*/
 
  /* Media Query para pantallas más grandes (mayor a 600px) */
+ @media screen and (max-width: 768px) {
+  .primer_body_index {
+    flex-direction: column; /* Cambia a dirección de columna en pantallas más pequeñas */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+  }
+
+  .logo_principal {
+    width: 100%; /* Ocupa el ancho completo */
+    height: auto; /* Ajusta automáticamente la altura */
+  }
+
+  .fondo_amarillo_index,
+  .texto_primero_index,
+  .texto_segundo_index,
+  .agua,
+  .guitarristas,
+  .piano-foto {
+    width: 100%; /* Ocupa el ancho completo */
+    max-width: none; /* Elimina la restricción del ancho máximo */
+    margin-left: 0; /* Elimina el margen izquierdo */
+    margin-right: 0; /* Elimina el margen derecho */
+    display: none;
+  }
+}
