@@ -119,4 +119,3 @@ document.addEventListener('DOMContentLoaded', function () {
   lasostecla_negra.addEventListener("click",function(){
     return reproducirAudio("audiolasos")
   });
-
