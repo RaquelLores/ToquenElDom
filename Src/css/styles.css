@@ -1,3 +1,11 @@
+/*estilos generales*/
+
+/* Estilos generales para el body */
+body {
+    background-color: #F5F5F5;
+    margin-top: 12vh; /* Añade un margen superior igual a la altura del header */
+}
+
 /* Estilo para el encabezado */
 header {
     background-color: #F5F5F5;
@@ -7,9 +15,11 @@ header {
     font-family: 'Abril Fatface', cursive;
     transition: all 0.5s ease;
     position: fixed;
+    z-index: 2;
     align-items: center;
     justify-content: space-between;
     padding: auto;
+    top: 0; /* Fija el encabezado en la parte superior */
 }
 
 header p {
@@ -71,8 +81,8 @@ li.hovered {
 }
 
 .logo_navar {
-    width: 10vw;
-    height: 10vh;
+    width: 5vw;
+    height: 9vh;
 }
 
 /* Líneas horizontales en el header */
@@ -87,7 +97,7 @@ header hr {
 footer {
     margin: 0;
     background: linear-gradient(to top, #3333CB, #F5F5F5);
-    font-family: 'open sans-serif';
+    font-family: 'Open Sans', sans-serif;
     color: white;
     text-decoration: none;
 }
@@ -124,8 +134,8 @@ footer {
 
 footer img {
     margin: 3vw;
-    width: 10vw;
-    height: 10vh;
+    width: 5vw;
+    height: 9vh;
 }
 
 #footer hr {
@@ -223,7 +233,7 @@ footer img {
         background: linear-gradient(to top, #3333CB, #F5F5F5);
         width: 100%;
         height: 100%;
-        font-family: 'open sans-serif';
+        font-family: 'Open Sans', sans-serif;
         color: white;
         text-decoration: none;
     }

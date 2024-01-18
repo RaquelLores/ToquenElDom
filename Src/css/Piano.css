@@ -6,6 +6,7 @@
     justify-content: center;
     height: 100vh;
     position: relative;
+    order: -1;
 }
 
 .teclas {
@@ -14,6 +15,7 @@
     align-items: center;
     text-align: center;
     position: relative;
+    order: -1;
 }
 
 .teclas_negras {
@@ -21,6 +23,7 @@
     display: flex;
     align-items: center;
     gap: 12vw; /* Ajusta el espacio entre las teclas negras en vw según sea necesario */
+    order: -1;
     
 }
 
@@ -30,7 +33,7 @@
 }
 
 /* Media Query para pantallas de hasta 500px */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
     .conjunto_teclas {
         margin-top: 10vh; /* Ajusta la distancia desde la parte superior en vh según sea necesario */
     }

@@ -1,0 +1,118 @@
+/*AQUI EMPIEZAN LOS ESTILOS DE LA PAGINA DE CONTACTO*/
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: -5%; 
+    margin: top -5px;
+    margin-left: 450px;
+    padding: 45px;
+    background-color: #3333CB;
+    color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 50px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  
+  .checkbox-field {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .checkbox-field input {
+    margin-right: 8px;
+  }
+  
+  .checkbox-field label {
+    margin-bottom: 0;
+    color: #fff; /* Color blanco para el texto del enlace */
+  }
+  
+  .checkbox-field a {
+    color: #fff; /* Color blanco para el enlace */
+    text-decoration: underline; /* Subrayado para el enlace */
+  }
+  
+  
+  button {
+    background-color: #FEC41D;
+    color: #3333CB;
+    font-family: Abril Fatface;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #27ae60;
+  }
+  
+  /* El recuadro de validación de contacto se coloreará en rojo cuando se falle al rellenarlo */
+  .form-control.falla input {
+    border: 0.1px solid;
+    border-color: #fe5f55
+  }
+  
+  /* empiezan los estilos del piano*/
+  .conjunto_teclas{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .teclas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  .teclas_negras {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 147px; /* Ajusta el espacio entre las teclas negras según sea necesario */
+  }
+  .teclas_blancas {
+    display: flex;
+    gap: 0px; /* Ajusta el espacio entre las teclas blancas según sea necesario */
+  }
+  
+  /*empiezan reglas de media queries para la página de contacto (se recomienda poner al final de la hoja de estilos/*
+  /* Estilos para pantallas más pequeñas (hasta 600px de ancho) */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Estilos para pantallas más pequeñas (móviles) */
+  @media only screen and (max-width: 600px) {
+    .container {
+       width: 100%;
+    }
+  }
+  
+  
+  
+  

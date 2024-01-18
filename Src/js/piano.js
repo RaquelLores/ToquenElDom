@@ -48,14 +48,19 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 //-----SONIDO-------//
-
-//Do
  
  // 3. Función de reproducción de audio
  function reproducirAudio(id) {
-    let audio = document.getElementById(id);
-    audio.play();
-  }
+// Pausar el audio después de 500 milisegundos (0.5 segundos)
+  setTimeout(function() {
+   audio.pause();
+   // Reiniciar el audio para la próxima reproducción
+   audio.currentTime = 0;
+}, 500);
+ let audio = document.getElementById(id);
+ audio.play();
+
+}
   // 4. Código JavaScript
   const tecla_blancado = document.getElementById("dotecla_blanca")
   tecla_blancado.addEventListener("click",function(){
@@ -119,4 +124,3 @@ document.addEventListener('DOMContentLoaded', function () {
   lasostecla_negra.addEventListener("click",function(){
     return reproducirAudio("audiolasos")
   });
-
