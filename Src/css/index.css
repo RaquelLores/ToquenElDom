@@ -91,11 +91,12 @@
     max-width: 50%; /* Ajusta el ancho de la imagen según sea necesario */
     margin-left: 5%;
   }
+  
   .texto_bienvenida {
       width: 642px;
       color: #3333CB;
-  text-align: justify;
-  font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
