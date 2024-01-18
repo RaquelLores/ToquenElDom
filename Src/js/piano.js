@@ -125,3 +125,216 @@ document.addEventListener('DOMContentLoaded', function () {
     return reproducirAudio("audiolasos")
   });
 
+  document.addEventListener('keydown', function (event) {
+    // Obtener la tecla presionada
+    const teclaPresionada = event.key;
+  
+    // Realizar la acción correspondiente según la tecla presionada
+    switch (teclaPresionada) {
+        case 'a':
+            reproducirAudio("audiodo");
+            break;
+        case 's':
+            reproducirAudio("audiore");
+            break;
+        case 'd':
+            reproducirAudio("audiomi");
+            break;
+        case 'f':
+            reproducirAudio("audiofa");
+            break;
+        case 'g':
+            reproducirAudio("audiosol");
+            break;
+        case 'h':
+            reproducirAudio("audiola");
+            break;
+        case 'j':
+            reproducirAudio("audiosi");
+            break;
+        // Agrega más casos según las teclas que quieras manejar
+    }
+  });
+  
+
+// Función para cambiar la imagen de la tecla
+function cambiarImagen(tecla, imagen) {
+  tecla.src = imagen;
+}
+
+// Función de reproducción de audio
+function reproducirAudio(id) {
+  // Pausar el audio después de 500 milisegundos (0.5 segundos)
+  setTimeout(function () {
+      audio.pause();
+      // Reiniciar el audio para la próxima reproducción
+      audio.currentTime = 0;
+  }, 500);
+  let audio = document.getElementById(id);
+  audio.play();
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  let teclasBlancas = document.querySelectorAll('.tecla_blanca');
+  let teclasNegras = document.querySelectorAll('.tecla_negra');
+
+  teclasBlancas.forEach(function (tecla) {
+      // Evento clic
+      tecla.addEventListener('click', function () {
+          cambiarImagen(tecla, "/Public/teclas/tecla_blanca_pulsada.svg");
+      });
+
+      // Evento mouseout
+      tecla.addEventListener('mouseout', function () {
+          cambiarImagen(tecla, "/Public/teclas/tecla_blanca.svg");
+      });
+  });
+
+  teclasNegras.forEach(function (tecla) {
+      // Evento clic
+      tecla.addEventListener('click', function () {
+          cambiarImagen(tecla, "/Public/teclas/tecla_negra_pulsada.svg");
+      });
+
+      // Evento mouseout
+      tecla.addEventListener('mouseout', function () {
+          cambiarImagen(tecla, "/Public/teclas/tecla_negra.svg");
+      });
+  });
+
+  // Asignar eventos de teclado a funciones de reproducción de audio
+  document.addEventListener('keydown', function (event) {
+      const teclaPresionada = event.key;
+      switch (teclaPresionada) {
+          case 'a':
+              reproducirAudio("audiodo");
+              cambiarImagen(teclasBlancas[0], "/Public/teclas/tecla_blanca_pulsada.svg");
+              break;
+          case 's':
+              reproducirAudio("audiore");
+              cambiarImagen(teclasBlancas[1], "/Public/teclas/tecla_blanca_pulsada.svg");
+              break;
+          case 'd':
+              reproducirAudio("audiomi");
+              // Añadir más casos según las teclas que quieras manejar
+              break;
+          case 'f':
+              reproducirAudio("audiofa");
+              // Añadir más casos según las teclas que quieras manejar
+              break;
+          case 'g':
+              reproducirAudio("audiosol");
+              // Añadir más casos según las teclas que quieras manejar
+              break;
+          case 'h':
+              reproducirAudio("audiola");
+              // Añadir más casos según las teclas que quieras manejar
+              break;
+          case 'j':
+              reproducirAudio("audiosi");
+              // Añadir más casos según las teclas que quieras manejar
+              break;
+          // Añadir más casos según las teclas que quieras manejar
+          case 'w':
+            reproducirAudio("audiodosos");
+            break;
+          case 'e':
+            reproducirAudio("audioresos");
+            break;
+          case 'r':
+            reproducirAudio("audiofasos");
+           break;
+          case 't':
+            reproducirAudio("audiosolsos");
+            break;
+          case 'y':
+            reproducirAudio("audiolasos");
+      }
+  });
+});
+
+// Función para cambiar la imagen de la tecla
+function cambiarImagen(tecla, imagen) {
+    tecla.src = imagen;
+}
+
+// Función de reproducción de audio
+function reproducirAudio(id) {
+    // Pausar el audio después de 500 milisegundos (0.5 segundos)
+    setTimeout(function () {
+        audio.pause();
+        // Reiniciar el audio para la próxima reproducción
+        audio.currentTime = 0;
+    }, 500);
+    let audio = document.getElementById(id);
+    audio.play();
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    let teclasBlancas = document.querySelectorAll('.tecla_blanca');
+    let teclasNegras = document.querySelectorAll('.tecla_negra');
+
+    teclasBlancas.forEach(function (tecla) {
+        // Evento clic
+        tecla.addEventListener('click', function () {
+            cambiarImagen(tecla, "/Public/teclas/tecla_blanca_pulsada.svg");
+            reproducirAudio(tecla.getAttribute("data-audio-id"));
+        });
+
+        // Evento mouseout
+        tecla.addEventListener('mouseout', function () {
+            cambiarImagen(tecla, "/Public/teclas/tecla_blanca.svg");
+        });
+    });
+
+    teclasNegras.forEach(function (tecla) {
+        // Evento clic
+        tecla.addEventListener('click', function () {
+            cambiarImagen(tecla, "/Public/teclas/tecla_negra_pulsada.svg");
+            reproducirAudio(tecla.getAttribute("data-audio-id"));
+        });
+
+        // Evento mouseout
+        tecla.addEventListener('mouseout', function () {
+            cambiarImagen(tecla, "/Public/teclas/tecla_negra.svg");
+        });
+    });
+
+    // Asignar eventos de teclado a funciones de reproducción de audio para teclas blancas
+    document.addEventListener('keydown', function (event) {
+        const teclaPresionada = event.key;
+        const teclaBlanca = document.querySelector(`.tecla_blanca[data-key="${teclaPresionada}"]`);
+        if (teclaBlanca) {
+            cambiarImagen(teclaBlanca, "/Public/teclas/tecla_blanca_pulsada.svg");
+            reproducirAudio(teclaBlanca.getAttribute("data-audio-id"));
+        }
+    });
+
+    // Asignar eventos de teclado para revertir la imagen a su estado inicial para teclas blancas
+    document.addEventListener('keyup', function (event) {
+        const teclaPresionada = event.key;
+        const teclaBlanca = document.querySelector(`.tecla_blanca[data-key="${teclaPresionada}"]`);
+        if (teclaBlanca) {
+            cambiarImagen(teclaBlanca, "/Public/teclas/tecla_blanca.svg");
+        }
+    });
+
+    // Asignar eventos de teclado a funciones de reproducción de audio para teclas negras
+    document.addEventListener('keydown', function (event) {
+        const teclaPresionada = event.key;
+        const teclaNegra = document.querySelector(`.tecla_negra[data-key="${teclaPresionada}"]`);
+        if (teclaNegra) {
+            cambiarImagen(teclaNegra, "/Public/teclas/tecla_negra_pulsada.svg");
+            reproducirAudio(teclaNegra.getAttribute("data-audio-id"));
+        }
+    });
+
+    // Asignar eventos de teclado para revertir la imagen a su estado inicial para teclas negras
+    document.addEventListener('keyup', function (event) {
+        const teclaPresionada = event.key;
+        const teclaNegra = document.querySelector(`.tecla_negra[data-key="${teclaPresionada}"]`);
+        if (teclaNegra) {
+            cambiarImagen(teclaNegra, "/Public/teclas/tecla_negra.svg");
+        }
+    });
+});
