@@ -180,6 +180,7 @@ if (tecla) {
     }, 500);
 }
 }
+/*intento de teclas neegras*/
 
 function obtenerIdSonido(tecla) {
   return tecla.id.replace("tecla_negra", "audio");
