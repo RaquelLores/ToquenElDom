@@ -35,8 +35,8 @@ header p {
 .header {
   display: flex;
   align-items: center;
-  background-color: #f5f5f5;
-  padding: auto;
+  background-color: #f5f5f5
+
 }
 
 .logo_page_under_construction {
@@ -115,8 +115,8 @@ footer {
 }
 
 .rrss_footer {
-  width: 4vw;
-  height: 4vh;
+  width: 2vw;
+  height: 2vh;
   margin: 0 10px;
 }
 
@@ -134,8 +134,8 @@ footer {
 
 footer img {
   margin: 3vw;
-  width: 5vw;
-  height: 9vh;
+  width: 3vw;
+  height: 5vh;
 }
 
 #footer hr {
@@ -165,7 +165,7 @@ footer img {
   }
 
   li.hovered {
-    border: 3px solid #3333cb;
+    border: 3px solid #ffffff;
     padding: 5px; /* Ajusta el espacio dentro del borde según sea necesario */
   }
 }
@@ -183,12 +183,14 @@ footer img {
   }
 
   nav ul {
+    background-color: #3333cb;
     display: none;
+    text-align: right;
     flex-direction: column;
     position: absolute;
     top: 15vh;
     left: 0;
-    width: 100vw;
+    width: 20vw;
     height: 18vh;
   }
 
@@ -203,16 +205,16 @@ footer img {
   }
 
   nav ul li a {
-    color: #3333cb;
+    color: white;
   }
 
   .menu-toggle {
-    display: block;
     padding: 1vw 2vh;
     background-color: #3498db;
     color: #fff;
     border: none;
     cursor: pointer;
+
   }
 
   .footer_logo {
