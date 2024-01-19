@@ -165,6 +165,7 @@ const mapeoTeclas = {
     KeyG: "audiosol",
     KeyH: "audiola",
     KeyJ: "audiosi",
+    KeyW:"audiodosos"
     // Puedes agregar más teclas según sea necesario
 };
 
@@ -180,33 +181,8 @@ if (tecla) {
     }, 500);
 }
 }
-/*intento de teclas neegras*/
 
-function obtenerIdSonido(tecla) {
-  return tecla.id.replace("tecla_negra", "audio");
-  }
-  
-  function obtenerIdSonidoPorTecla(codigoTecla) {
-  const mapeoTeclas = {
-      KeyW: "audiodosos",
-      KeyE: "audioresos",
-      KeyR: "audiofasos",
-      KeyT: "audiosolsos",
-      KeyY: "audiolasos",
-      // Puedes agregar más teclas según sea necesario
-  };
-  
-  return mapeoTeclas[codigoTecla];
-  }
-  
-  function cambiarImagen(tecla) {
-  if (teclanegra) {
-      teclanegra.src = `/Public/teclas/tecla_negra_pulsada.svg`;
-  
-      setTimeout(function () {
-          tecla.src = `/Public/teclas/tecla_negra.svg`;
-      }, 500);
-  }
-  }
+
+
 // Resto del código de reproducción de audio y asignación de eventos de clic
 
