@@ -19,7 +19,7 @@
 }
 
 .page_under_construction img {
-    width: 60vw;
+    width: 30vw;
     height: 30vh;
 }
 
@@ -38,7 +38,7 @@
 
     .page_under_construction img {
         margin-top: 8vh;
-        width: 40vw;
+        width: 30vw;
         height: 15vh;
     }
 }
