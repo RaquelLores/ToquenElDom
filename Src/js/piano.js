@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
            // Cambia la imagen al hacer clic
            tecla.src = "/Public/teclas/tecla_blanca_pulsada.svg";
        });
-   });
+   });S
 });
 
 
@@ -165,7 +165,11 @@ const mapeoTeclas = {
     KeyG: "audiosol",
     KeyH: "audiola",
     KeyJ: "audiosi",
-    KeyW:"audiodosos"
+    KeyW:"audiodosos",
+    KeyE:"audioresos",
+    KeyR:"audiofasos",
+    KeyT:"audiosolsos",
+    KeyY:"audiolasos"
     // Puedes agregar más teclas según sea necesario
 };
 
@@ -181,6 +185,7 @@ if (tecla) {
     }, 500);
 }
 }
+
 
 
 
