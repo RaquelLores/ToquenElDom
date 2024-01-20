@@ -130,64 +130,60 @@ teclasNegras.forEach(function (tecla) {
     });
 });
 });
-
-document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('keydown', function (e) {
-    manejarTecla(e);
+  manejarTecla(e);
 });
-});
-
-function manejarClick(tecla) {
-const idSonido = obtenerIdSonido(tecla);
-reproducirAudio(idSonido);
-cambiarImagen(tecla);
-}
 
 function manejarTecla(e) {
-const idSonido = obtenerIdSonidoPorTecla(e.code);
-if (idSonido) {
-    reproducirAudio(idSonido);
-    const tecla = document.getElementById(`${idSonido.replace("audio", "")}tecla_blanca`);
-    cambiarImagen(tecla);
-}
+  const idSonidoBlanca = obtenerIdSonidoPorTeclaBlanca(e.code);
+  const idSonidoNegra = obtenerIdSonidoPorTeclaNegra(e.code);
+
+  if (idSonidoBlanca) {
+      reproducirAudio(idSonidoBlanca);
+      const teclaBlanca = document.getElementById(`${idSonidoBlanca.replace("audio", "")}tecla_blanca`);
+      cambiarImagen(teclaBlanca);
+  } else if (idSonidoNegra) {
+      reproducirAudio(idSonidoNegra);
+      const teclaNegra = document.getElementById(`${idSonidoNegra.replace("audio", "")}tecla_negra`);
+      cambiarImagen(teclaNegra);
+  }
 }
 
-function obtenerIdSonido(tecla) {
-return tecla.id.replace("tecla_blanca", "audio");
+function obtenerIdSonidoPorTeclaBlanca(codigoTecla) {
+  // Mapeo de teclas blancas
+  const mapeoTeclasBlancas = {
+      KeyA: "audiodo",
+      KeyS: "audiore",
+      KeyD: "audiomi",
+      KeyF: "audiofa",
+      KeyG: "audiosol",
+      KeyH: "audiola",
+      KeyJ: "audiosi",
+  };
+
+  return mapeoTeclasBlancas[codigoTecla];
 }
 
-function obtenerIdSonidoPorTecla(codigoTecla) {
-const mapeoTeclas = {
-    KeyA: "audiodo",
-    KeyS: "audiore",
-    KeyD: "audiomi",
-    KeyF: "audiofa",
-    KeyG: "audiosol",
-    KeyH: "audiola",
-    KeyJ: "audiosi",
-    KeyW:"audiodosos",
-    KeyE:"audioresos",
-    KeyR:"audiofasos",
-    KeyT:"audiosolsos",
-    KeyY:"audiolasos"
-    // Puedes agregar más teclas según sea necesario
-};
+function obtenerIdSonidoPorTeclaNegra(codigoTecla) {
+  // Mapeo de teclas negras
+  const mapeoTeclasNegras = {
+      KeyW: "audiodosos",
+      KeyE: "audioresos",
+      KeyR: "audiofasos",
+      KeyT: "audiosolsos",
+      KeyY: "audiolasos",
+  };
 
-return mapeoTeclas[codigoTecla];
+  return mapeoTeclasNegras[codigoTecla];
 }
 
 function cambiarImagen(tecla) {
-if (tecla) {
-    tecla.src = `/Public/teclas/tecla_blanca_pulsada.svg`;
+  if (tecla) {
+      tecla.src = `/Public/teclas/${tecla.classList.contains('tecla_negra') ? 'tecla_negra' : 'tecla_blanca'}_pulsada.svg`;
 
-    setTimeout(function () {
-        tecla.src = `/Public/teclas/tecla_blanca.svg`;
-    }, 500);
+      setTimeout(function () {
+          tecla.src = `/Public/teclas/${tecla.classList.contains('tecla_negra') ? 'tecla_negra' : 'tecla_blanca'}.svg`;
+      }, 500);
+  }
 }
-}
-
-
-
-
-// Resto del código de reproducción de audio y asignación de eventos de clic
 
