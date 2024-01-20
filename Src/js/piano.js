@@ -165,6 +165,7 @@ const mapeoTeclas = {
     KeyG: "audiosol",
     KeyH: "audiola",
     KeyJ: "audiosi",
+    KeyW:"audiodosos"
     // Puedes agregar más teclas según sea necesario
 };
 
@@ -180,6 +181,8 @@ if (tecla) {
     }, 500);
 }
 }
+
+
 
 // Resto del código de reproducción de audio y asignación de eventos de clic
 
