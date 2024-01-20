@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
            // Cambia la imagen al hacer clic
            tecla.src = "/Public/teclas/tecla_blanca_pulsada.svg";
        });
-   });
+   });S
 });
 
 
@@ -130,11 +130,8 @@ teclasNegras.forEach(function (tecla) {
     });
 });
 });
-
-document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('keydown', function (e) {
-    manejarTecla(e);
-});
+  manejarTecla(e);
 });
 
 function manejarClick(tecla) {
