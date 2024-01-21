@@ -11,19 +11,18 @@ body {
     font-weight: 400;
     line-height: normal;
     padding-top: 10%;
-    padding-left: 4%;
     justify-content: center;
 }
 
 .title-about-us {
     font-size: 40px;
-    padding-left: 5%;
+    width: 400px;
     padding-bottom: 10%;
     font-family: 'Abril Fatface', serif;
 }
 
 .text-about-us {
-   padding-left: 10%;
+   width: 650px;
    padding-top: 3%;
    font-size: 19px;
    font-family: 'Open Sans', sans-serif;
@@ -57,4 +56,31 @@ img {
 
 .description-ana, .description-sofia {
     background-color: #00DDB5;
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 800px) {
+
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+    }
+
+    .title-about-us {
+        font-size: 30px;
+        text-align: center;
+        padding-bottom: 1%;
+    }
+
+    .text-about-us {
+        width: 300px;
+        text-align: center;
+        justify-content: center;
+        padding-top: 1%;
+        padding-left: 3.5%;
+        padding-bottom: 5%;
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif;
+     }
 }
