@@ -65,7 +65,10 @@
     color: #fff; /* Color blanco para el enlace */
     text-decoration: underline; /* Subrayado para el enlace */
   }
-  
+  .error {
+    color: #00DDB5;
+    font-size:12px;
+  }
   
   button {
     background-color: #FEC41D;

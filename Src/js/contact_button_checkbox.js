@@ -1,22 +1,38 @@
 
 //VARIACIONES EN JS UTILIZANDO EXPRESIONES REGULARES (METODO: .test)
 function validarEmailYEnviar() {
-    // Obtener el valor del campo de email
+    // Restablecer mensajes de error
+    document.getElementById('error-usuario').textContent = '';
+    document.getElementById('error-email').textContent = '';
+    document.getElementById('error-checkbox').textContent = '';
+
+    // Obtener los valores de los campos
+    let usuarioInput = document.getElementById('usuario').value;
     let emailInput = document.getElementById('email').value;
+    let checkbox = document.getElementById('gridCheck');
 
     // Expresión regular para verificar el formato del email
     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // Utilizar el método test() para comprobar si el email es válido
-    if (emailRegex.test(emailInput)) {
-        // Verificar si el checkbox de política de privacidad está marcado
-        let checkbox = document.getElementById('gridCheck');
-        if (checkbox.checked) {
-            alert('Tu mensaje se ha enviado.');
-        } else {
-            alert('Por favor, acepta la política de privacidad haciendo clic en la casilla.');
-        }
-    } else {
-        alert('Por favor, introduce un email válido.');
+    // Validar nombre de usuario.El método trim( ) devuelve la cadena de texto sin espacios en blanco en ambos extremos.
+    if (usuarioInput.trim() === '') {
+      document.getElementById('error-usuario').textContent = 'Por favor, introduce tu nombre.';
     }
-}
+
+    // Validar email
+    if (!emailRegex.test(emailInput)) {
+      document.getElementById('error-email').textContent = 'Por favor, introduce un email válido.';
+    }
+// Mostrar popup si no hay errores
+    if (usuarioInput.trim() !== '' && emailRegex.test(emailInput) && checkbox.checked) {
+      alert('Tu mensaje se ha enviado.');
+    }
+
+    // Validar checkbox
+    if (!checkbox.checked) {
+      document.getElementById('error-checkbox').textContent = 'Por favor, acepta la política de privacidad haciendo clic en la casilla.';
+    }
+
+    // Devolver false si hay errores, true si todo está bien
+    return (usuarioInput.trim() !== '' && emailRegex.test(emailInput) && checkbox.checked);
+  }

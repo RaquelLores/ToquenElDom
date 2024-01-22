@@ -38,17 +38,22 @@
       <hr>
     </div>
   </header>
-  <!-- CUERPO PRINCIPAL LA SECCIÓN CONTACTO -->
+    <!-- CUERPO PRINCIPAL LA SECCIÓN CONTACTO -->
     <div class="container">
       <h2 class="titleContacto">Contáctanos</h2>
       <form action="#" method="post">
-
+        <!-- para llamar a la función validarEmailYEnviar cuando se envía el formulario añadimos onsubmit!-->
+        <form onsubmit="return validarEmailYEnviar();">
+        
+<!--Se han agregado elementos p debajo de cada campo de entrada para mostrar mensajes de error!-->
         <div class="form-control">
           <label for="usuario">Tu nombre:</label>
           <input id="usuario" type="text" name="name">
+          <p id="error-usuario" class="error"></p>
 
           <label for="email">Email:</label>
           <input id="email" type="text" name="email">
+          <p id="error-email" class="error"></p>
         </div>
 
         <label for="mensaje">Tu mensaje:</label>
@@ -59,13 +64,13 @@
           <label class="form-check-label" for="gridCheck">
             Acepto la <a href="/Pages/PrivacyPolicy.html" target="_blank">política de privacidad</a>
           </label>
+          <p id="error-checkbox" class="error"></p>
         </div>
 
         <!-- Un solo botón para validar email y enviar formulario -->
         <button type="button" onclick="validarEmailYEnviar()">Enviar</button>
       </form>
     </div>
-
   <!-- FOOTER -->
   <footer id="footer">
     <article class="footer_contactpart">
