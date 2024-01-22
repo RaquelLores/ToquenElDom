@@ -1,0 +1,33 @@
+# Escuela de música online "Toquen el DOM"
+
+Web para la escuela de música "Toquen el DOM", en la que los usuarios pueden acceder al instrumento de su preferencia y practicar en él de forma didáctica, reproduciendo los sonidos haciendo click y con pulsaciones del teclado.
+
+## Contenido
+
+- [Descripción](#descripción)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Cómo Usar](#cómo-usar)
+- [Recursos Externos](#recursos-externos)
+
+## Descripción
+
+Este proyecto contiene el código HTML, CSS y JavaScript para el sitio web Toquen el DOM, escuela de música online. La página web tiene las siguientes secciones: Inicio, Instrumentos virtuales, Sobre nosotros y Contacto.
+
+
+## Estructura
+
+- `index.html`: El archivo principal que define la estructura de la página web.
+- `pages/`: Carpeta que contiene archivos HTML utilizados en la página.
+- `src/`: Carpeta que contiene todos los archivos CSS y JavaScript de la página web.
+- `public/`: Carpeta que contiene las imágenes y el sonido utilizadas en la página.
+
+
+## Cómo Usar
+
+1. Clona este repositorio: `git clone https://github.com/RaquelLores/ToquenElDom.git`
+2. Abre el archivo `index.html` en tu navegador web.
+
+## Recursos Externos
+
+- Bootstrap: Se utiliza la versión 5.3.2 de Bootstrap para estilos y componentes. [Sitio web de Bootstrap](https://getbootstrap.com/)
+- Google Fonts

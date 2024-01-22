@@ -1,179 +1,213 @@
 /*empiezan los estilos del index*/
 .body_index {
-    background-color: #F5F5F5;
-  }
-  .primer_body_index {
-    display: flex;
-    align-items: center;
-    /* Centra verticalmente los elementos */
-  }
-
-  .logo_principal {
-    width: 625px;
-    height: 625px;
-  }
-    
-  .imagenes_body_index {
+  background-color: #f5f5f5;
+}
+.primer_body_index {
   display: flex;
-  }
-  .parte_primera_index {
-    display: flex;
-  }
-  .parte_segunda_index {
-    display: flex;
-  }
-  .fondo_amarillo_index {
-    width: 308px;
-    height: 216px;
-    flex-shrink: 0;
-    border-radius: 50px;
-    background: linear-gradient(108deg, rgba(254, 196, 29, 0.00) -29.08%, #FEC41D 41.26%, rgba(254, 196, 29, 0.00) 106.83%);
-    color: #3333CB;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    position: relative;
-    padding: 20px;/* Ajusta el relleno según sea necesario */
-  }
-  
-  .texto_primero_index {
-    width: 206px;
-    position: absolute;
-    top: 10%;
-    left: 10%;
-  }
-  
-  .texto_segundo_index {
-    width: 172px;
-    height: 42px;
-    flex-shrink: 0;
-    position: absolute;
-    bottom: 25%;
-    right: 10%;
-  }
-  
-  .agua {
-    width: 308px;
-    height: 373px;
-    flex-shrink: 0;
-    border-radius: 200px 200px 0px 0px;
-    margin-top: -100px;
-  }
-  
-  .guitarristas {
-    width: 308px;
-    height: 401px;
-    flex-shrink: 0;
-    border-radius: 200px 0px 0px 0px;
-    margin-left: 30px;
-  }
-  
-  .piano-foto {
-    width: 308px;
-    height: 193px;
-    flex-shrink: 0;
-    border-radius: 200px 0px 0px 200px;
-    margin-top: 50px;
-    margin-left: 30px;
-  }
-  .segunda_intro_index {
-      display: flex;
-      align-items: center; /* Centra verticalmente los elementos */
-      justify-content: space-between; /* Coloca los elementos en los extremos */
-    }
-  .profesora-y-niño {
-    width: 40%;
-    height: 40%;
-    flex-shrink: 0;
-    border-radius: 20%;
-    max-width: 50%; /* Ajusta el ancho de la imagen según sea necesario */
-    margin-left: 5%;
-  }
-  
-  .texto_bienvenida {
-      width: 642px;
-      color: #3333CB;
-    text-align: justify;
-    font-family: 'Open Sans', sans-serif;
+  align-items: center;
+  /* Centra verticalmente los elementos */
+}
+
+.logo_principal {
+  width: 625px;
+  height: 625px;
+}
+
+.imagenes_body_index {
+  display: flex;
+}
+.parte_primera_index {
+  display: flex;
+}
+.parte_segunda_index {
+  display: flex;
+}
+.fondo_amarillo_index {
+  width: 308px;
+  height: 216px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: linear-gradient(
+    108deg,
+    rgba(254, 196, 29, 0) -29.08%,
+    #fec41d 41.26%,
+    rgba(254, 196, 29, 0) 106.83%
+  );
+  color: #3333cb;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  padding: 20px; /* Ajusta el relleno según sea necesario */
+}
+
+.texto_primero_index {
+  width: 206px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.texto_segundo_index {
+  width: 172px;
+  height: 42px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 25%;
+  right: 10%;
+}
+
+.agua {
+  width: 308px;
+  height: 373px;
+  flex-shrink: 0;
+  border-radius: 200px 200px 0px 0px;
+  margin-top: -100px;
+}
+
+.guitarristas {
+  width: 308px;
+  height: 401px;
+  flex-shrink: 0;
+  border-radius: 200px 0px 0px 0px;
+  margin-left: 30px;
+}
+
+.piano-foto {
+  width: 308px;
+  height: 193px;
+  flex-shrink: 0;
+  border-radius: 200px 0px 0px 200px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+.segunda_intro_index {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between; /* Coloca los elementos en los extremos */
+}
+.profesora-y-niño {
+  width: 40%;
+  height: 40%;
+  flex-shrink: 0;
+  border-radius: 20%;
+  max-width: 50%; /* Ajusta el ancho de la imagen según sea necesario */
+  margin-left: 5%;
+}
+
+.texto_bienvenida {
+  width: 642px;
+  color: #3333cb;
+  text-align: justify;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   max-width: 45%; /* Ajusta el ancho del texto según sea necesario */
   margin-right: 5%;
-  }
-  .instrumentos_virtuales {
+}
+.instrumentos_virtuales {
   flex-shrink: 0;
-  background: linear-gradient(0deg, #FEC41D 3.88%, rgba(254, 196, 29, 0.00) 99.66%);
+  background: linear-gradient(
+    0deg,
+    #fec41d 3.88%,
+    rgba(254, 196, 29, 0) 99.66%
+  );
   padding-bottom: 10%;
   padding-top: 10%;
-  }
-  .texto_instrumentos_virtuales {
-      width: 774px;
-      color: #3333CB;
+}
+.texto_instrumentos_virtuales {
+  width: 774px;
+  color: #3333cb;
   text-align: justify;
-  font-family: 'Abril Fatface', serif;
+  font-family: "Abril Fatface", serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  }
-  .logos_instrumentos {
-    display: flex; /* Utiliza el modelo flexbox para alinear elementos en línea */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
-  }
-  
-  .logos_instrumentos img {
-    margin: 0 2%; /* Añade un pequeño espacio entre las imágenes */
-    max-width: 100%; /* Asegura que las imágenes no se extiendan más allá de su tamaño original */
-    height: auto; /* Mantiene la proporción de la imagen al cambiar su ancho */
-  }
-  .logos_instrumentos a {
-    margin-right: 5%; /* Ajusta el margen entre cada enlace (imagen) según tus necesidades */
-  }
-  
-  /* Elimina el margen derecho de la última imagen para evitar espacio adicional */
-  .logos_instrumentos a:last-child {
-    margin-right: 0;
-  }
-  .encabezado_instrumentos {
-    display: flex; /* Utiliza el modelo flexbox para alinear los elementos en el contenedor */
-    justify-content: space-between;
+}
+.logos_instrumentos {
+  display: flex; /* Utiliza el modelo flexbox para alinear elementos en línea */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+}
+
+.logos_instrumentos img {
+  margin: 0 2%; /* Añade un pequeño espacio entre las imágenes */
+  max-width: 100%; /* Asegura que las imágenes no se extiendan más allá de su tamaño original */
+  height: auto; /* Mantiene la proporción de la imagen al cambiar su ancho */
+}
+.logos_instrumentos a {
+  margin-right: 5%; /* Ajusta el margen entre cada enlace (imagen) según tus necesidades */
+}
+
+/* Elimina el margen derecho de la última imagen para evitar espacio adicional */
+.logos_instrumentos a:last-child {
+  margin-right: 0;
+}
+.encabezado_instrumentos {
+  display: flex; /* Utiliza el modelo flexbox para alinear los elementos en el contenedor */
+  justify-content: space-between;
   align-items: center;
   margin-left: 5%;
   margin-right: 5%;
-  }
-  .button_instrumentos {
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    border-radius: 100px;
-    border-color: #3333CB;
-    color: #3333CB;
-    font-family: Abril Fatface;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .button_instrumentos:hover {
-    background-color: #FF96D3; /* Nuevo color de fondo al pasar el ratón */
-    color: #F5F5F5; /* Nuevo color de texto al pasar el ratón */
-    border-color: #FF96D3;
-  }
-  .logos_instrumentos img {
-    transition: transform 0.3s ease; /* Agrega una transición suave */
-  }
-  
-  .logos_instrumentos img:hover {
-    transform: scale(1.2); /* Cambia el tamaño de la imagen al pasar el ratón */
-  }
-  /*aquí terminan los estilos del index*/
+}
+.button_instrumentos {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  border-color: #3333cb;
+  color: #3333cb;
+  font-family: Abril Fatface;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.button_instrumentos:hover {
+  background-color: #ff96d3; /* Nuevo color de fondo al pasar el ratón */
+  color: #f5f5f5; /* Nuevo color de texto al pasar el ratón */
+  border-color: #ff96d3;
+}
+.logos_instrumentos img {
+  transition: transform 0.3s ease; /* Agrega una transición suave */
+}
 
  /* Media Query para pantallas más grandes (mayor a 600px) */
+ @media screen and (max-width: 768px) {
+  .primer_body_index {
+    flex-direction: column; /* Cambia a dirección de columna en pantallas más pequeñas */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+  }
+
+  .logo_principal {
+    width: 100%; /* Ocupa el ancho completo */
+    height: auto; /* Ajusta automáticamente la altura */
+  }
+
+  .fondo_amarillo_index,
+  .texto_primero_index,
+  .texto_segundo_index,
+  .agua,
+  .guitarristas,
+  .piano-foto {
+    width: 100%; /* Ocupa el ancho completo */
+    max-width: none; /* Elimina la restricción del ancho máximo */
+    margin-left: 0; /* Elimina el margen izquierdo */
+    margin-right: 0; /* Elimina el margen derecho */
+    display: none;
+  }
+}
+.logos_instrumentos img:hover {
+  transform: scale(1.2); /* Cambia el tamaño de la imagen al pasar el ratón */
+}
+/*aquí terminan los estilos del index*/
+
+/* Media Query para pantallas más grandes (mayor a 600px) */
  @media screen and (max-width: 768px) {
   .primer_body_index {
     flex-direction: column; /* Cambia a dirección de columna en pantallas más pequeñas */
