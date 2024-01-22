@@ -11,7 +11,7 @@ header {
   background-color: #f5f5f5;
   width: 100vw;
   display: flex;
-  height: 9vh;
+  height: 10vh;
   font-family: "Abril Fatface", cursive;
   transition: all 0.5s ease;
   position: fixed;
@@ -35,8 +35,8 @@ header p {
 .header {
   display: flex;
   align-items: center;
-  background-color: #f5f5f5;
-  padding: auto;
+  background-color: #f5f5f5
+
 }
 
 .logo_page_under_construction {
@@ -77,7 +77,7 @@ li {
 
 li.hovered {
   border: 3px solid #3333cb;
-  padding: 5px; /* Ajusta el espacio dentro del borde según sea necesario */
+  padding: 1px; /* Ajusta el espacio dentro del borde según sea necesario */
 }
 
 .logo_navar {
@@ -115,8 +115,8 @@ footer {
 }
 
 .rrss_footer {
-  width: 4vw;
-  height: 4vh;
+  width: 2vw;
+  height: 2vh;
   margin: 0 10px;
 }
 
@@ -134,8 +134,8 @@ footer {
 
 footer img {
   margin: 3vw;
-  width: 5vw;
-  height: 9vh;
+  width: 3vw;
+  height: 5vh;
 }
 
 #footer hr {
@@ -143,7 +143,8 @@ footer img {
 }
 
 .footer_copyright {
-  font-size: small;
+  font-size: x-small;
+  font-family:"Open Sans", sans-serif;
   text-align: center;
   color: #f5f5f5;
 }
@@ -165,8 +166,15 @@ footer img {
   }
 
   li.hovered {
-    border: 3px solid #3333cb;
+    border: 3px solid #ffffff;
     padding: 5px; /* Ajusta el espacio dentro del borde según sea necesario */
+  }
+
+  nav ul.show-menu {
+    display: flex;
+    position: absolute;
+    right: 5vw;
+    height: fit-content;
   }
 }
 
@@ -179,40 +187,43 @@ footer img {
   nav {
     font-size: x-small;
     font-family: "Abril Fatface", cursive;
-    justify-content: right; /* Reinicia el margen */
   }
 
   nav ul {
+    background-color: #3333cb;
     display: none;
+    text-align: right;
     flex-direction: column;
     position: absolute;
     top: 15vh;
-    left: 0;
-    width: 100vw;
-    height: 18vh;
+    height: 10vh;
   }
 
   nav ul.show-menu {
     display: flex;
-    align-items: end;
+    position: absolute;
+    right: 5vw;
+    height: fit-content;
   }
 
   nav ul li {
     display: block;
     margin: 1vw 5vh;
+    height: 5vw;
   }
 
   nav ul li a {
-    color: #3333cb;
+    color: white;
   }
 
   .menu-toggle {
-    display: block;
-    padding: 1vw 2vh;
+    padding: 1vw;
     background-color: #3498db;
     color: #fff;
     border: none;
     cursor: pointer;
+    position: absolute;
+    right: 5vw;
   }
 
   .footer_logo {

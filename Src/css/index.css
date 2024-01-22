@@ -177,9 +177,72 @@
   transition: transform 0.3s ease; /* Agrega una transición suave */
 }
 
+ /* Media Query para pantallas más grandes (mayor a 600px) */
+ @media screen and (max-width: 768px) {
+  .primer_body_index {
+    flex-direction: column; /* Cambia a dirección de columna en pantallas más pequeñas */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+  }
+
+  .logo_principal {
+    width: 100%; /* Ocupa el ancho completo */
+    height: auto; /* Ajusta automáticamente la altura */
+  }
+
+  .fondo_amarillo_index,
+  .texto_primero_index,
+  .texto_segundo_index,
+  .agua,
+  .guitarristas,
+  .piano-foto {
+    width: 100%; /* Ocupa el ancho completo */
+    max-width: none; /* Elimina la restricción del ancho máximo */
+    margin-left: 0; /* Elimina el margen izquierdo */
+    margin-right: 0; /* Elimina el margen derecho */
+    display: none;
+  }
+}
 .logos_instrumentos img:hover {
   transform: scale(1.2); /* Cambia el tamaño de la imagen al pasar el ratón */
 }
 /*aquí terminan los estilos del index*/
 
 /* Media Query para pantallas más grandes (mayor a 600px) */
+ @media screen and (max-width: 768px) {
+  .primer_body_index {
+    flex-direction: column; /* Cambia a dirección de columna en pantallas más pequeñas */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+  }
+
+  .logo_principal {
+    width: 100%; /* Ocupa el ancho completo */
+    height: auto; /* Ajusta automáticamente la altura */
+  }
+
+  .fondo_amarillo_index,
+  .texto_primero_index,
+  .texto_segundo_index,
+  .agua,
+  .guitarristas,
+  .piano-foto {
+    width: 100%; /* Ocupa el ancho completo */
+    max-width: none; /* Elimina la restricción del ancho máximo */
+    margin-left: 0; /* Elimina el margen izquierdo */
+    margin-right: 0; /* Elimina el margen derecho */
+    display: none;
+  }
+  .texto_instrumentos_virtuales {
+    width: 300px;
+    color: #3333cb;
+    text-align: justify;
+    font-family: "Abril Fatface", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .encabezado_instrumentos {
+    display: block;
+  }
+  
+}
