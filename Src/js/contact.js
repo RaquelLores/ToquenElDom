@@ -10,11 +10,10 @@ function enviarFormulario() {
 }
 
 
-// Aquí empiezan los scripts de Contact
+// Crear un evento load, para referenciar nuestro formulario
 
 window.addEventListener('load', ()=> {
-    // Crear un evento load, para referenciar nuestro formulario
-        const forms = document.getElementById('contactForm')
+        const forms = document.getElementById('formulario')
         const usuario = document.getElementById('usuario')
 
     // Agregar elemento submit: prevenimos el comportamiento por defecto que realiza la página una vez que desencadenamos el evento submit
@@ -42,11 +41,11 @@ const validaFalla = (input, msje) => {
     const aviso = formControl.querySelector('p')
     aviso.innerText = msje
     // Hacer que salga un mensaje al equivocarse con el apartado nombre de usuario
-    formControl.className = 'contactForm falla'
+    formControl.className = 'form-control falla'
     
 }
 const validaOk = (input, msje) => {
     const formControl = input.parentElement
-    formControl.className = 'contactForm ok'
+    formControl.className = 'form-control ok'
 }
 })
