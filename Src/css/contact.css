@@ -1,4 +1,16 @@
 /*AQUI EMPIEZAN LOS ESTILOS DE LA PAGINA DE CONTACTO*/
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.datos-de-contacto-mapa {
+  width: 100%
+}
+
+.google-map {
+  margin-top: 20px;
+}
 
 .container {
     width: 100%;
