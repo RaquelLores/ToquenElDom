@@ -41,6 +41,32 @@
     height: auto;
     margin-left: 1vw;
 }
+.titulo_instrucciones_piano {
+    color: #3333CB;
+    font-family: "Abril Fatface";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.texto_instrucciones_piano {
+    color: #3333CB;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.teclado_ordenador {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* Media Query para pantallas de hasta 500px */
 @media screen and (max-width: 650px) {
@@ -70,5 +96,11 @@
         width: 8vw ;
         height: auto;
         margin-left: 1vw;
+    }
+    .teclado_ordenador {
+       width: 300px;
+    }
+    .texto_instrucciones_piano {
+        font-size: 10px;
     }
 }
