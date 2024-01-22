@@ -231,4 +231,18 @@
     margin-right: 0; /* Elimina el margen derecho */
     display: none;
   }
+  .texto_instrumentos_virtuales {
+    width: 300px;
+    color: #3333cb;
+    text-align: justify;
+    font-family: "Abril Fatface", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .encabezado_instrumentos {
+    display: block;
+  }
+  
 }
