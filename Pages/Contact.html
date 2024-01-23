@@ -38,13 +38,12 @@
       <hr>
     </div>
   </header>
-    <!-- CUERPO PRINCIPAL LA SECCIÓN CONTACTO -->
+<!-- CUERPO PRINCIPAL LA SECCIÓN CONTACTO -->
     <div class="container">
       <h2 class="titleContacto">Contáctanos</h2>
-      <form action="#" method="post">
-        <!-- para llamar a la función validarEmailYEnviar cuando se envía el formulario añadimos onsubmit!-->
-        <form onsubmit="return validarEmailYEnviar();">
-        
+<!-- para llamar a la función validarEmailYEnviar cuando se envía el formulario añadimos onsubmit!-->
+      <form action="#" method="post" onsubmit="return validarEmailYEnviar();">
+              
 <!--Se han agregado elementos p debajo de cada campo de entrada para mostrar mensajes de error!-->
         <div class="form-control">
           <label for="usuario">Tu nombre:</label>
@@ -67,11 +66,11 @@
           <p id="error-checkbox" class="error"></p>
         </div>
 
-        <!-- Un solo botón para validar email y enviar formulario -->
+<!-- Un solo botón para validar email y enviar formulario -->
         <button type="button" onclick="validarEmailYEnviar()">Enviar</button>
       </form>
     </div>
-  <!-- FOOTER -->
+<!-- FOOTER -->
   <footer id="footer">
     <article class="footer_contactpart">
             <img class="footer_logo" src="/Public/img_page_under_construction/logo_footer.png"alt="in this picture u can see toque el dom logo">
@@ -100,7 +99,7 @@
         
         <p class="footer_copyright">Copyright    2014 Toquen el DOM.</p>
         </footer>
-  <!--ENLACE A JAVA SCRIPT // PUEDE ENLAZARSE EN EL HEAD, SIN EMBARGO SE RECOMIENDA ENLAZARLO AL FINAL DEL BODY, PARA QUE ASÍ LA CARGA DE LA PÁGINA SEA MÁS RÁPIDA-->
+<!--ENLACE A JAVA SCRIPT // PUEDE ENLAZARSE EN EL HEAD, SIN EMBARGO SE RECOMIENDA ENLAZARLO AL FINAL DEL BODY, PARA QUE ASÍ LA CARGA DE LA PÁGINA SEA MÁS RÁPIDA-->
   <script src="/Src/js/contact_button_checkbox.js"></script>
   <script src="/Src/js/contact.js"></script>
   <script src="/Src/index.js"></script>
