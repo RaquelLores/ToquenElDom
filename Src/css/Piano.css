@@ -1,5 +1,5 @@
 /* Estilos generales del piano */
-.conjunto_teclas {
+.keys-set {
     margin: 0;
     display: flex;
     align-items: center;
@@ -9,7 +9,7 @@
     order: -1;
 }
 
-.teclas {
+.keys {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +18,7 @@
     order: -1;
 }
 
-.teclas_negras {
+.black-keys {
     position: absolute;
     display: flex;
     align-items: center;
@@ -27,21 +27,21 @@
     margin-right: 2vw;
 }
 
-.teclas_blancas {
+.white-keys {
     display: flex;
     gap: 0; /* No se ajusta el espacio entre las teclas blancas en vw */
 }
 
-.teclas_negras_primeras img {
+.black-keys-first img {
     height: auto;
     margin-left: 2vw;
 }
 
-.teclas_negras_segundas img {
+.black-keys-second img {
     height: auto;
     margin-left: 1vw;
 }
-.titulo_instrucciones_piano {
+.piano-instructions-title {
     color: #3333CB;
     font-family: "Abril Fatface";
     font-size: 40px;
@@ -51,7 +51,7 @@
     margin-left: 10%;
     margin-right: 10%;
 }
-.texto_instrucciones_piano {
+.piano-instructions-text {
     color: #3333CB;
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
@@ -61,7 +61,7 @@
     margin-left: 10%;
     margin-right: 10%;
 }
-.teclado_ordenador {
+.keyboard {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -71,36 +71,36 @@
 /* Media Query para pantallas de hasta 500px */
 @media screen and (max-width: 650px) {
    
-    .teclas {
+    .keys {
         position: relative;
         width: 100vw; /* Hace que el conjunto de teclas ocupe el 100% del ancho de la pantalla */
     }
 
-    .teclas_negras {
+    .black-keys {
         gap: 7vh; /* Ajusta el espacio entre las teclas negras en vh según sea necesario */
     }
 
-    .teclas_blancas img {
+    .white-keys img {
         width: 10vw; /* Ajusta el ancho de las teclas blancas y negras al 10% del ancho de la pantalla */
         max-width: 10vw; /* Ajusta el ancho máximo en vw según sea necesario */
         height: auto; /* Mantiene la proporción de la altura */
     }
 
-    .teclas_negras_primeras img {
+    .black-keys-first img {
         width: 8vw ;
         height: auto;
         margin-left: 1vw;
     }
 
-    .teclas_negras_segundas img {
+    .black-keys-second img {
         width: 8vw ;
         height: auto;
         margin-left: 1vw;
     }
-    .teclado_ordenador {
+    .keyboard {
        width: 300px;
     }
-    .texto_instrucciones_piano {
+    .piano-instructions-text {
         font-size: 10px;
     }
     

@@ -1,54 +1,54 @@
 /* Aquí empiezan los estilos JS del teclado */
 //aquí empiezan los estilos de js del piano
 document.addEventListener('DOMContentLoaded', function () {
-  let teclasBlancas = document.querySelectorAll('.tecla_blanca');
+  let whiteKeys = document.querySelectorAll('.white-key');
 
-   teclasBlancas.forEach(function (tecla) {
-       tecla.addEventListener('click', function () {
+   whiteKeys.forEach(function (key) {
+       key.addEventListener('click', function () {
            // Cambia la imagen al hacer clic
-           tecla.src = "/Public/teclas/tecla_blanca_pulsada.svg";
+           key.src = "/Public/keys/white-key-pressed.svg";
        });
    });
 });
 
 
 document.addEventListener('DOMContentLoaded', function () {
-   let teclasBlancas = document.querySelectorAll('.tecla_blanca');
+   let whiteKeys = document.querySelectorAll('.white-key');
 
-    teclasBlancas.forEach(function (tecla) {
-        tecla.addEventListener('mouseout', function () {
+    whiteKeys.forEach(function (key) {
+        key.addEventListener('mouseout', function () {
             // Cambia la imagen al hacer clic
-            tecla.src = "/Public/teclas/tecla_blanca.svg";
+            key.src = "/Public/keys/white-key.svg";
         });
     });
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  let teclasNegras = document.querySelectorAll('.tecla_negra');
+  let blackKeys = document.querySelectorAll('.black-key');
 
-   teclasNegras.forEach(function (tecla) {
-       tecla.addEventListener('click', function () {
+   blackKeys.forEach(function (key) {
+       key.addEventListener('click', function () {
            // Cambia la imagen al hacer clic
-           tecla.src = "/Public/teclas/tecla_negra_pulsada.svg";
+           key.src = "/Public/keys/black-key-pressed.svg";
        });
    });
 });
 
 
 document.addEventListener('DOMContentLoaded', function () {
-   let teclasNegras = document.querySelectorAll('.tecla_negra');
+   let blackKeys = document.querySelectorAll('.black-key');
 
-    teclasNegras.forEach(function (tecla) {
-        tecla.addEventListener('mouseout', function () {
+    blackKeys.forEach(function (key) {
+        key.addEventListener('mouseout', function () {
             // Cambia la imagen al hacer clic
-            tecla.src = "/Public/teclas/tecla_negra.svg";
+            key.src = "/Public/keys/black-key.svg";
         });
     });
 });
 //-----SONIDO-------//
 
 // 3. Función de reproducción de audio
-function reproducirAudio(id) {
+function playAudio(id) {
 // Pausar el audio después de 500 milisegundos (0.5 segundos)
 setTimeout(function() {
  audio.pause();
@@ -59,111 +59,111 @@ let audio = document.getElementById(id);
 audio.play();
 }
 // 4. Código JavaScript
-const tecla_blancado = document.getElementById("dotecla_blanca")
-tecla_blancado.addEventListener("click",function(){
-  return reproducirAudio("audiodo")
+const whiteKeyDo = document.getElementById("dowhite-key")
+whiteKeyDo.addEventListener("click",function(){
+  return playAudio("audiodo")
 });
 //RE
-const tecla_blancare = document.getElementById("retecla_blanca")
-tecla_blancare.addEventListener("click",function(){
-  return reproducirAudio("audiore")
+const whiteKeyRe = document.getElementById("rewhite-key")
+whiteKeyRe.addEventListener("click",function(){
+  return playAudio("audiore")
 });
-const tecla_blancami = document.getElementById("mitecla_blanca")
-tecla_blancami.addEventListener("click",function(){
-  return reproducirAudio("audiomi")
+const whiteKeyMi = document.getElementById("miwhite-key")
+whiteKeyMi.addEventListener("click",function(){
+  return playAudio("audiomi")
 });
-const tecla_blancafa = document.getElementById("fatecla_blanca")
-tecla_blancafa.addEventListener("click",function(){
-  return reproducirAudio("audiofa")
+const whiteKeyFa = document.getElementById("fawhite-key")
+whiteKeyFa.addEventListener("click",function(){
+  return playAudio("audiofa")
 });
-const tecla_blancasol = document.getElementById("soltecla_blanca")
-tecla_blancasol.addEventListener("click",function(){
-  return reproducirAudio("audiosol")
+const whiteKeySol = document.getElementById("solwhite-key")
+whiteKeySol.addEventListener("click",function(){
+  return playAudio("audiosol")
 });
-const tecla_blancala = document.getElementById("latecla_blanca")
-tecla_blancala.addEventListener("click",function(){
-  return reproducirAudio("audiola")
+const whiteKeyLa = document.getElementById("lawhite-key")
+whiteKeyLa.addEventListener("click",function(){
+  return playAudio("audiola")
 });
-const tecla_blancasi = document.getElementById("sitecla_blanca")
-tecla_blancasi.addEventListener("click",function(){
-  return reproducirAudio("audiosi")
+const whiteKeySi = document.getElementById("siwhite-key")
+whiteKeySi.addEventListener("click",function(){
+  return playAudio("audiosi")
 });
 //teclas negras
-const dosostecla_negra = document.getElementById("dosostecla_negra")
-dosostecla_negra.addEventListener("click",function(){
-  return reproducirAudio("audiodosos")
+const blackKeyDoSos = document.getElementById("dososblack-key")
+blackKeyDoSos.addEventListener("click",function(){
+  return playAudio("audiodosos")
 });
-const resostecla_negra = document.getElementById("resostecla_negra")
-resostecla_negra.addEventListener("click",function(){
-  return reproducirAudio("audioresos")
+const blackKeyReSos = document.getElementById("resosblack-key")
+blackKeyReSos.addEventListener("click",function(){
+  return playAudio("audioresos")
 });
-const fasostecla_negra = document.getElementById("fasostecla_negra")
-fasostecla_negra.addEventListener("click",function(){
-  return reproducirAudio("audiofasos")
+const blackKeyFaSos = document.getElementById("fasosblack-key")
+blackKeyFaSos.addEventListener("click",function(){
+  return playAudio("audiofasos")
 });
-const solsostecla_negra = document.getElementById("solsostecla_negra")
-solsostecla_negra.addEventListener("click",function(){
-  return reproducirAudio("audiosolsos")
+const blackKeySolSos = document.getElementById("solsosblack-key")
+blackKeySolSos.addEventListener("click",function(){
+  return playAudio("audiosolsos")
 });
-const lasostecla_negra = document.getElementById("lasostecla_negra")
-lasostecla_negra.addEventListener("click",function(){
-  return reproducirAudio("audiolasos")
+const blackKeyLaSos = document.getElementById("lasosblack-key")
+blackKeyLaSos.addEventListener("click",function(){
+  return playAudio("audiolasos")
 });
 
 //TOCAR EL PIANO CON EL TECLADO
 document.addEventListener('DOMContentLoaded', function () {
-let teclasBlancas = document.querySelectorAll('.tecla_blanca');
+let whiteKeys = document.querySelectorAll('.white-key');
 
-teclasBlancas.forEach(function (tecla) {
-    tecla.addEventListener('click', function () {
-        manejarClick(tecla);
+whiteKeys.forEach(function (key) {
+    key.addEventListener('click', function () {
+        useClick(key);
     });
 });
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-let teclasNegras = document.querySelectorAll('.tecla_negra');
+let blackKeys = document.querySelectorAll('.black-key');
 
-teclasNegras.forEach(function (tecla) {
-    tecla.addEventListener('click', function () {
-        manejarClick(tecla);
+blackKeys.forEach(function (key) {
+    key.addEventListener('click', function () {
+        useClick(key);
     });
 });
 });
 
 document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('keydown', function (e) {
-    manejarTecla(e);
+   useKey(e);
 });
 });
 
-function manejarClick(tecla) {
-const idSonido = obtenerIdSonido(tecla);
-reproducirAudio(idSonido);
-cambiarImagen(tecla);
+function useClick(key) {
+const idSound = getIdSound(key);
+playAudio(idSound);
+changeImage(key);
 }
 document.addEventListener('DOMContentLoaded', function () {
   document.addEventListener('keydown', function (e) {
-      manejarTecla(e);
+      useKey(e);
   });
 
-  function manejarTecla(e) {
-      const idSonidoBlanca = obtenerIdSonidoPorTeclaBlanca(e.code);
-      const idSonidoNegra = obtenerIdSonidoPorTeclaNegra(e.code);
+  function useKey(e) {
+      const idSoundWhite = getIdSoundByWhiteKey(e.code);
+      const idSoundBlack = getIdSoundByBlackKey(e.code);
 
-      if (idSonidoBlanca) {
-          reproducirAudio(idSonidoBlanca);
-          const teclaBlanca = document.getElementById(`${idSonidoBlanca.replace("audio", "")}tecla_blanca`);
-          cambiarImagen(teclaBlanca);
-      } else if (idSonidoNegra) {
-          reproducirAudio(idSonidoNegra);
-          const teclaNegra = document.getElementById(`${idSonidoNegra.replace("audio", "")}tecla_negra`);
-          cambiarImagen(teclaNegra);
+      if (idSoundWhite) {
+          playAudio(idSoundWhite);
+          const whiteKey = document.getElementById(`${idSoundWhite.replace("audio", "")}white-key`);
+          changeImage(whiteKey);
+      } else if (idSoundBlack) {
+          playAudio(idSoundBlack);
+          const blackKey = document.getElementById(`${idSoundBlack.replace("audio", "")}black-key`);
+          changeImage(blackKey);
       }
   }
 
-  function obtenerIdSonidoPorTeclaBlanca(codigoTecla) {
-      const mapeoTeclasBlancas = {
+  function getIdSoundByWhiteKey(codeKey) {
+      const mappingWhiteKeys = {
           KeyA: "audiodo",
           KeyS: "audiore",
           KeyD: "audiomi",
@@ -173,11 +173,11 @@ document.addEventListener('DOMContentLoaded', function () {
           KeyJ: "audiosi",
       };
 
-      return mapeoTeclasBlancas[codigoTecla];
+      return mappingWhiteKeys[codeKey];
   }
 
-  function obtenerIdSonidoPorTeclaNegra(codigoTecla) {
-      const mapeoTeclasNegras = {
+  function getIdSoundByBlackKey(codeKey) {
+      const mappingBlackKeys = {
           KeyW: "audiodosos",
           KeyE: "audioresos",
           KeyR: "audiofasos",
@@ -185,18 +185,16 @@ document.addEventListener('DOMContentLoaded', function () {
           KeyY: "audiolasos",
       };
 
-      return mapeoTeclasNegras[codigoTecla];
+      return mappingBlackKeys[codeKey];
   }
 
-  function cambiarImagen(tecla) {
-      if (tecla) {
-          tecla.src = `/Public/teclas/${tecla.classList.contains('tecla_negra') ? 'tecla_negra' : 'tecla_blanca'}_pulsada.svg`;
+  function changeImage(key) {
+      if (key) {
+          key.src = `/Public/keys/${key.classList.contains('black-key') ? 'black-key' : 'white-key'}-pressed.svg`;
 
           setTimeout(function () {
-              tecla.src = `/Public/teclas/${tecla.classList.contains('tecla_negra') ? 'tecla_negra' : 'tecla_blanca'}.svg`;
+              key.src = `/Public/keys/${key.classList.contains('black-key') ? 'black-key' : 'white-key'}.svg`;
           }, 500);
       }
   }
-
-  // Otras funciones y código que puedas tener...
 });
