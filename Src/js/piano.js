@@ -197,6 +197,4 @@ document.addEventListener('DOMContentLoaded', function () {
           }, 500);
       }
   }
-
-  // Otras funciones y código que puedas tener...
 });
