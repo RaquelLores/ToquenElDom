@@ -89,23 +89,23 @@ whiteKeySi.addEventListener("click",function(){
   return playAudio("audiosi")
 });
 //teclas negras
-const blackKeysDoSos = document.getElementById("dosos")
-blackKeysDoSos.addEventListener("click",function(){
+const blackKeyDoSos = document.getElementById("dososblack-key")
+blackKeyDoSos.addEventListener("click",function(){
   return playAudio("audiodosos")
 });
-const blackKeyReSos = document.getElementById("resos")
+const blackKeyReSos = document.getElementById("resosblack-key")
 blackKeyReSos.addEventListener("click",function(){
   return playAudio("audioresos")
 });
-const blackKeyFaSos = document.getElementById("fasos")
+const blackKeyFaSos = document.getElementById("fasosblack-key")
 blackKeyFaSos.addEventListener("click",function(){
   return playAudio("audiofasos")
 });
-const blackKeySolSos = document.getElementById("solsos")
+const blackKeySolSos = document.getElementById("solsosblack-key")
 blackKeySolSos.addEventListener("click",function(){
   return playAudio("audiosolsos")
 });
-const blackKeyLaSos = document.getElementById("lasos")
+const blackKeyLaSos = document.getElementById("lasosblack-key")
 blackKeyLaSos.addEventListener("click",function(){
   return playAudio("audiolasos")
 });
